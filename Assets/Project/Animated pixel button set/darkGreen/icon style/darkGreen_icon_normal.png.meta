@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: d43d7d70fc0d0a04c9ec2715d8cffbb5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8455156287571356317
+    second: darkGreen_icon_normal_0
+  - first:
+      213: 3083901571201805732
+    second: darkGreen_icon_normal_1
+  - first:
+      213: 7093126100798372211
+    second: darkGreen_icon_normal_2
+  - first:
+      213: -6612353622275443644
+    second: darkGreen_icon_normal_3
+  - first:
+      213: 1455243701882241804
+    second: darkGreen_icon_normal_4
+  - first:
+      213: -4597732039966873509
+    second: darkGreen_icon_normal_5
+  - first:
+      213: -5646191495326532458
+    second: darkGreen_icon_normal_6
+  - first:
+      213: -6656983178490298521
+    second: darkGreen_icon_normal_7
+  - first:
+      213: 4135531805772905660
+    second: darkGreen_icon_normal_8
+  - first:
+      213: -1943088284413526503
+    second: darkGreen_icon_normal_9
+  - first:
+      213: 7667031864737677690
+    second: darkGreen_icon_normal_10
+  - first:
+      213: -496009942441877049
+    second: darkGreen_icon_normal_11
+  - first:
+      213: 6544849307197344954
+    second: darkGreen_icon_normal_12
+  - first:
+      213: -8920508486449735708
+    second: darkGreen_icon_normal_13
+  - first:
+      213: 3858992844965743346
+    second: darkGreen_icon_normal_14
+  - first:
+      213: -7526401925803065396
+    second: darkGreen_icon_normal_15
+  - first:
+      213: 7808433010291947091
+    second: darkGreen_icon_normal_16
+  - first:
+      213: -1205803587769662696
+    second: darkGreen_icon_normal_17
+  - first:
+      213: -8369698804720875554
+    second: darkGreen_icon_normal_18
+  - first:
+      213: -4873717047362847585
+    second: darkGreen_icon_normal_19
+  - first:
+      213: -7376972762003740001
+    second: darkGreen_icon_normal_20
+  - first:
+      213: -1068865556089949900
+    second: darkGreen_icon_normal_21
+  - first:
+      213: 6917164338870802995
+    second: darkGreen_icon_normal_22
+  - first:
+      213: -3634387641866810497
+    second: darkGreen_icon_normal_23
+  - first:
+      213: -2696622905612627421
+    second: darkGreen_icon_normal_24
+  - first:
+      213: -263252949927190536
+    second: darkGreen_icon_normal_25
+  - first:
+      213: 6766855715096356520
+    second: darkGreen_icon_normal_26
+  - first:
+      213: -8595998984821032740
+    second: darkGreen_icon_normal_27
+  - first:
+      213: -2223118725416417750
+    second: darkGreen_icon_normal_28
+  - first:
+      213: 5601333077378296030
+    second: darkGreen_icon_normal_29
+  - first:
+      213: 3043218816036177676
+    second: darkGreen_icon_normal_30
+  - first:
+      213: -1988442432757953291
+    second: darkGreen_icon_normal_31
+  - first:
+      213: 8022789874206270707
+    second: darkGreen_icon_normal_32
+  - first:
+      213: 1427664740246699084
+    second: darkGreen_icon_normal_33
+  - first:
+      213: -6301881529661201605
+    second: darkGreen_icon_normal_34
+  - first:
+      213: 1449420221945457824
+    second: darkGreen_icon_normal_35
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36516ee572049aa80800000000000000
+      internalID: -8455156287571356317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 80
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ada0c9c3283cca20800000000000000
+      internalID: 3083901571201805732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37973219b98df6260800000000000000
+      internalID: 7093126100798372211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 80
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444310f0a633c34a0800000000000000
+      internalID: -6612353622275443644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03c058cf60123410800000000000000
+      internalID: 1455243701882241804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_5
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 80
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b58a759c1139130c0800000000000000
+      internalID: -4597732039966873509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69cfa33ffb2b4a1b0800000000000000
+      internalID: -5646191495326532458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_7
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 64
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76fb552c115ad93a0800000000000000
+      internalID: -6656983178490298521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_8
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc7c60344c546930800000000000000
+      internalID: 4135531805772905660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_9
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 64
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91efe401083c805e0800000000000000
+      internalID: -1943088284413526503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a714a4bfbd4c66a60800000000000000
+      internalID: 7667031864737677690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_11
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 64
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1a0b7d591dd19f0800000000000000
+      internalID: -496009942441877049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc85ffc4c9f3da50800000000000000
+      internalID: 6544849307197344954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_13
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 48
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e75e416bccf33480800000000000000
+      internalID: -8920508486449735708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_14
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa05f2fb85ed8530800000000000000
+      internalID: 3858992844965743346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_15
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 48
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf31b73359dc8790800000000000000
+      internalID: -7526401925803065396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_16
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356b2e6b3702d5c60800000000000000
+      internalID: 7808433010291947091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_17
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 48
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813091a8600244fe0800000000000000
+      internalID: -1205803587769662696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7c99b184bd8db80800000000000000
+      internalID: -8369698804720875554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_19
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 32
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9cfb20ea241d5cb0800000000000000
+      internalID: -4873717047362847585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_20
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ae80b9b5abf9990800000000000000
+      internalID: -7376972762003740001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_21
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 32
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431bb989070aa21f0800000000000000
+      internalID: -1068865556089949900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_22
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ad4674154beff50800000000000000
+      internalID: 6917164338870802995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_23
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 32
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b857e02bf009dc0800000000000000
+      internalID: -3634387641866810497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32217c131cba39ad0800000000000000
+      internalID: -2696622905612627421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_25
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 16
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff148936dcb85cf0800000000000000
+      internalID: -263252949927190536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_26
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a6e3a8ab63b8ed50800000000000000
+      internalID: 6766855715096356520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_27
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 16
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8bf148770e4b880800000000000000
+      internalID: -8595998984821032740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_28
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a26090e3c45e521e0800000000000000
+      internalID: -2223118725416417750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_29
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 16
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed867c9b1ceebbd40800000000000000
+      internalID: 5601333077378296030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c070f97b36fab3a20800000000000000
+      internalID: 3043218816036177676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_31
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc06238422a764e0800000000000000
+      internalID: -1988442432757953291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_32
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f46aaf42eca65f60800000000000000
+      internalID: 8022789874206270707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_33
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c31c4648510d310800000000000000
+      internalID: 1427664740246699084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_34
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33e2f733283b88a0800000000000000
+      internalID: -6301881529661201605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_normal_35
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aca35333006d1410800000000000000
+      internalID: 1449420221945457824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      darkGreen_icon_normal_0: -8455156287571356317
+      darkGreen_icon_normal_1: 3083901571201805732
+      darkGreen_icon_normal_10: 7667031864737677690
+      darkGreen_icon_normal_11: -496009942441877049
+      darkGreen_icon_normal_12: 6544849307197344954
+      darkGreen_icon_normal_13: -8920508486449735708
+      darkGreen_icon_normal_14: 3858992844965743346
+      darkGreen_icon_normal_15: -7526401925803065396
+      darkGreen_icon_normal_16: 7808433010291947091
+      darkGreen_icon_normal_17: -1205803587769662696
+      darkGreen_icon_normal_18: -8369698804720875554
+      darkGreen_icon_normal_19: -4873717047362847585
+      darkGreen_icon_normal_2: 7093126100798372211
+      darkGreen_icon_normal_20: -7376972762003740001
+      darkGreen_icon_normal_21: -1068865556089949900
+      darkGreen_icon_normal_22: 6917164338870802995
+      darkGreen_icon_normal_23: -3634387641866810497
+      darkGreen_icon_normal_24: -2696622905612627421
+      darkGreen_icon_normal_25: -263252949927190536
+      darkGreen_icon_normal_26: 6766855715096356520
+      darkGreen_icon_normal_27: -8595998984821032740
+      darkGreen_icon_normal_28: -2223118725416417750
+      darkGreen_icon_normal_29: 5601333077378296030
+      darkGreen_icon_normal_3: -6612353622275443644
+      darkGreen_icon_normal_30: 3043218816036177676
+      darkGreen_icon_normal_31: -1988442432757953291
+      darkGreen_icon_normal_32: 8022789874206270707
+      darkGreen_icon_normal_33: 1427664740246699084
+      darkGreen_icon_normal_34: -6301881529661201605
+      darkGreen_icon_normal_35: 1449420221945457824
+      darkGreen_icon_normal_4: 1455243701882241804
+      darkGreen_icon_normal_5: -4597732039966873509
+      darkGreen_icon_normal_6: -5646191495326532458
+      darkGreen_icon_normal_7: -6656983178490298521
+      darkGreen_icon_normal_8: 4135531805772905660
+      darkGreen_icon_normal_9: -1943088284413526503
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

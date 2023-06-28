@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: 678a7b4dab99cf143b8a2ff84a093960
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6772879714910672456
+    second: purple_icon_press_0
+  - first:
+      213: -3494135511748151483
+    second: purple_icon_press_1
+  - first:
+      213: 7629590416051419875
+    second: purple_icon_press_2
+  - first:
+      213: -3211671397235154990
+    second: purple_icon_press_3
+  - first:
+      213: 6207905110220234841
+    second: purple_icon_press_4
+  - first:
+      213: -8080150311713095803
+    second: purple_icon_press_5
+  - first:
+      213: -8526510547472319296
+    second: purple_icon_press_6
+  - first:
+      213: 2744743593098261220
+    second: purple_icon_press_7
+  - first:
+      213: -727554343251575224
+    second: purple_icon_press_8
+  - first:
+      213: 4009410903616489781
+    second: purple_icon_press_9
+  - first:
+      213: -2563490957432531688
+    second: purple_icon_press_10
+  - first:
+      213: 6444908371296631260
+    second: purple_icon_press_11
+  - first:
+      213: 6045743380300272857
+    second: purple_icon_press_12
+  - first:
+      213: 4008155465174948586
+    second: purple_icon_press_13
+  - first:
+      213: 903515361526432157
+    second: purple_icon_press_14
+  - first:
+      213: -1335726782378358225
+    second: purple_icon_press_15
+  - first:
+      213: -4865039212771665665
+    second: purple_icon_press_16
+  - first:
+      213: 1707237345097928910
+    second: purple_icon_press_17
+  - first:
+      213: 3487492263986437947
+    second: purple_icon_press_18
+  - first:
+      213: -4200526980584461102
+    second: purple_icon_press_19
+  - first:
+      213: 631938227509972358
+    second: purple_icon_press_20
+  - first:
+      213: 3697496048866310090
+    second: purple_icon_press_21
+  - first:
+      213: -2192761873662508638
+    second: purple_icon_press_22
+  - first:
+      213: 513110805759007681
+    second: purple_icon_press_23
+  - first:
+      213: -7242169537177113824
+    second: purple_icon_press_24
+  - first:
+      213: -953083235660508325
+    second: purple_icon_press_25
+  - first:
+      213: -2105342246811408226
+    second: purple_icon_press_26
+  - first:
+      213: 7729652626262454336
+    second: purple_icon_press_27
+  - first:
+      213: 7509607750929358732
+    second: purple_icon_press_28
+  - first:
+      213: 4136176989461034904
+    second: purple_icon_press_29
+  - first:
+      213: 2767412099386586516
+    second: purple_icon_press_30
+  - first:
+      213: 7640521786826135787
+    second: purple_icon_press_31
+  - first:
+      213: -7829326082498973384
+    second: purple_icon_press_32
+  - first:
+      213: -80184962692264980
+    second: purple_icon_press_33
+  - first:
+      213: 4092594431209152632
+    second: purple_icon_press_34
+  - first:
+      213: -586521324829921347
+    second: purple_icon_press_35
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: purple_icon_press_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 80
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84613b9673a1efd50800000000000000
+      internalID: 6772879714910672456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 80
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5477c29c346528fc0800000000000000
+      internalID: -3494135511748151483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_2
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 80
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea38726f00c1e960800000000000000
+      internalID: 7629590416051419875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_3
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 80
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df148061e9dd63d0800000000000000
+      internalID: -3211671397235154990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_4
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 80
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950620e8ec8e62650800000000000000
+      internalID: 6207905110220234841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_5
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 80
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f349a1a1a8ddf80800000000000000
+      internalID: -8080150311713095803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 64
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc7a4c15dfbba980800000000000000
+      internalID: -8526510547472319296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_7
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 64
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2b62271c9471620800000000000000
+      internalID: 2744743593098261220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_8
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 64
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e72b7fd2537e5f0800000000000000
+      internalID: -727554343251575224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_9
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 64
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53983ac59f944a730800000000000000
+      internalID: 4009410903616489781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_10
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 64
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815de416e86ac6cd0800000000000000
+      internalID: -2563490957432531688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_11
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 64
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9b311640ae07950800000000000000
+      internalID: 6444908371296631260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 48
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d497f9929bc6e350800000000000000
+      internalID: 6045743380300272857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_13
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 48
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea1b42d824df9730800000000000000
+      internalID: 4008155465174948586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_14
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 48
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9144ec2f6ee98c00800000000000000
+      internalID: 903515361526432157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_15
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 48
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2acc53819b867de0800000000000000
+      internalID: -1335726782378358225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_16
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 48
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff81660bc98eb7cb0800000000000000
+      internalID: -4865039212771665665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_17
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 48
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0d7dde15351b710800000000000000
+      internalID: 1707237345097928910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 32
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f95df8cbf066030800000000000000
+      internalID: 3487492263986437947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_19
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 32
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dca1dc67fab4b5c0800000000000000
+      internalID: -4200526980584461102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_20
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 32
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68dc8b2487815c800800000000000000
+      internalID: 631938227509972358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_21
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 32
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac73617f015205330800000000000000
+      internalID: 3697496048866310090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_22
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 32
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a1835391beb191e0800000000000000
+      internalID: -2192761873662508638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_23
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 32
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb1eab2f8fee1700800000000000000
+      internalID: 513110805759007681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 16
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b27653d25ae7b90800000000000000
+      internalID: -7242169537177113824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_25
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 16
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b535319c8d7f5c2f0800000000000000
+      internalID: -953083235660508325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_26
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 16
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98ee20916258c2e0800000000000000
+      internalID: -2105342246811408226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_27
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 16
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040f9813c1e354b60800000000000000
+      internalID: 7729652626262454336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_28
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 16
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f1aac367c773860800000000000000
+      internalID: 7509607750929358732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_29
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 16
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89738f8be07a66930800000000000000
+      internalID: 4136176989461034904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4953e0b54a2d76620800000000000000
+      internalID: 2767412099386586516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_31
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8976a7516980a60800000000000000
+      internalID: 7640521786826135787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_32
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831b2f5d865a85390800000000000000
+      internalID: -7829326082498973384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_33
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb4666833023eef0800000000000000
+      internalID: -80184962692264980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_34
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870a6f1a3f0dbc830800000000000000
+      internalID: 4092594431209152632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_icon_press_35
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf225c66f14cd7f0800000000000000
+      internalID: -586521324829921347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      purple_icon_press_0: 6772879714910672456
+      purple_icon_press_1: -3494135511748151483
+      purple_icon_press_10: -2563490957432531688
+      purple_icon_press_11: 6444908371296631260
+      purple_icon_press_12: 6045743380300272857
+      purple_icon_press_13: 4008155465174948586
+      purple_icon_press_14: 903515361526432157
+      purple_icon_press_15: -1335726782378358225
+      purple_icon_press_16: -4865039212771665665
+      purple_icon_press_17: 1707237345097928910
+      purple_icon_press_18: 3487492263986437947
+      purple_icon_press_19: -4200526980584461102
+      purple_icon_press_2: 7629590416051419875
+      purple_icon_press_20: 631938227509972358
+      purple_icon_press_21: 3697496048866310090
+      purple_icon_press_22: -2192761873662508638
+      purple_icon_press_23: 513110805759007681
+      purple_icon_press_24: -7242169537177113824
+      purple_icon_press_25: -953083235660508325
+      purple_icon_press_26: -2105342246811408226
+      purple_icon_press_27: 7729652626262454336
+      purple_icon_press_28: 7509607750929358732
+      purple_icon_press_29: 4136176989461034904
+      purple_icon_press_3: -3211671397235154990
+      purple_icon_press_30: 2767412099386586516
+      purple_icon_press_31: 7640521786826135787
+      purple_icon_press_32: -7829326082498973384
+      purple_icon_press_33: -80184962692264980
+      purple_icon_press_34: 4092594431209152632
+      purple_icon_press_35: -586521324829921347
+      purple_icon_press_4: 6207905110220234841
+      purple_icon_press_5: -8080150311713095803
+      purple_icon_press_6: -8526510547472319296
+      purple_icon_press_7: 2744743593098261220
+      purple_icon_press_8: -727554343251575224
+      purple_icon_press_9: 4009410903616489781
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

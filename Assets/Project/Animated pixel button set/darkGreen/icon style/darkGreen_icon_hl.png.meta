@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: dfcf1ecdeb5ba344bb0b85982787f06a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2396885208152653114
+    second: darkGreen_icon_hl_0
+  - first:
+      213: 190959379656439251
+    second: darkGreen_icon_hl_1
+  - first:
+      213: 3303200595926597602
+    second: darkGreen_icon_hl_2
+  - first:
+      213: -7650294828142054719
+    second: darkGreen_icon_hl_3
+  - first:
+      213: 1776960297733554397
+    second: darkGreen_icon_hl_4
+  - first:
+      213: -8157831640350829985
+    second: darkGreen_icon_hl_5
+  - first:
+      213: 1919507824628207184
+    second: darkGreen_icon_hl_6
+  - first:
+      213: -8746474234918780473
+    second: darkGreen_icon_hl_7
+  - first:
+      213: -1763555694665889520
+    second: darkGreen_icon_hl_8
+  - first:
+      213: -9167991801737602491
+    second: darkGreen_icon_hl_9
+  - first:
+      213: -7309755850439026082
+    second: darkGreen_icon_hl_10
+  - first:
+      213: 738042322680164979
+    second: darkGreen_icon_hl_11
+  - first:
+      213: 6527627088452505455
+    second: darkGreen_icon_hl_12
+  - first:
+      213: 3514678172308112628
+    second: darkGreen_icon_hl_13
+  - first:
+      213: 6401868565967974289
+    second: darkGreen_icon_hl_14
+  - first:
+      213: -4312094934331107698
+    second: darkGreen_icon_hl_15
+  - first:
+      213: 2031608893847142759
+    second: darkGreen_icon_hl_16
+  - first:
+      213: 941387568783126212
+    second: darkGreen_icon_hl_17
+  - first:
+      213: 2514256030608131530
+    second: darkGreen_icon_hl_18
+  - first:
+      213: 7917128824155014157
+    second: darkGreen_icon_hl_19
+  - first:
+      213: 6353591212373099232
+    second: darkGreen_icon_hl_20
+  - first:
+      213: -1471290969730029585
+    second: darkGreen_icon_hl_21
+  - first:
+      213: 7376445626204989125
+    second: darkGreen_icon_hl_22
+  - first:
+      213: 3198280149105867688
+    second: darkGreen_icon_hl_23
+  - first:
+      213: 4126742650370034277
+    second: darkGreen_icon_hl_24
+  - first:
+      213: -967831092711232231
+    second: darkGreen_icon_hl_25
+  - first:
+      213: 1606030768665225141
+    second: darkGreen_icon_hl_26
+  - first:
+      213: -1642096019737682287
+    second: darkGreen_icon_hl_27
+  - first:
+      213: 4614541641519995655
+    second: darkGreen_icon_hl_28
+  - first:
+      213: 1879999889767696267
+    second: darkGreen_icon_hl_29
+  - first:
+      213: 5107900936069835007
+    second: darkGreen_icon_hl_30
+  - first:
+      213: -8423859304453692550
+    second: darkGreen_icon_hl_31
+  - first:
+      213: 3340065484893745579
+    second: darkGreen_icon_hl_32
+  - first:
+      213: 1343015974634699102
+    second: darkGreen_icon_hl_33
+  - first:
+      213: -2710003966882697697
+    second: darkGreen_icon_hl_34
+  - first:
+      213: -2961906170649297362
+    second: darkGreen_icon_hl_35
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 85
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c24ca83a9d8cbed0800000000000000
+      internalID: -2396885208152653114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 85
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d573f64b8c66a200800000000000000
+      internalID: 190959379656439251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 85
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef301ed07357dd20800000000000000
+      internalID: 3303200595926597602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 85
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c2b5950361b4d590800000000000000
+      internalID: -7650294828142054719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 85
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0816ed9f709a810800000000000000
+      internalID: 1776960297733554397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_5
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 85
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52527b585f89ce80800000000000000
+      internalID: -8157831640350829985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e0c8e423673aa10800000000000000
+      internalID: 1919507824628207184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_7
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 68
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c14f8e26084e9680800000000000000
+      internalID: -8746474234918780473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_8
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 68
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01982dd70779687e0800000000000000
+      internalID: -1763555694665889520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_9
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 68
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a9cb9c700c4c080800000000000000
+      internalID: -9167991801737602491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 68
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a9fb368c78e8a90800000000000000
+      internalID: -7309755850439026082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_11
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 68
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3723e88059d0e3a00800000000000000
+      internalID: 738042322680164979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 51
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6fcd69804ac69a50800000000000000
+      internalID: 6527627088452505455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_13
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 51
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f48e381d25a6c030800000000000000
+      internalID: 3514678172308112628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_14
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 51
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fa24dca8108d850800000000000000
+      internalID: 6401868565967974289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_15
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 51
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86de61f08c5824c0800000000000000
+      internalID: -4312094934331107698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_16
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 51
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76188486689b13c10800000000000000
+      internalID: 2031608893847142759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_17
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 51
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce6941910b701d00800000000000000
+      internalID: 941387568783126212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac508cae98e64e220800000000000000
+      internalID: 2514256030608131530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_19
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 34
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0404c408ba4fdd60800000000000000
+      internalID: 7917128824155014157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_20
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 34
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2ca8d7b8d7c2850800000000000000
+      internalID: 6353591212373099232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_21
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 34
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7600488ace49be0800000000000000
+      internalID: -1471290969730029585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_22
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 34
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6aee607366e5660800000000000000
+      internalID: 7376445626204989125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_23
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 34
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab73a3b9d2926c20800000000000000
+      internalID: 3198280149105867688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 17
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a82ca7392254930800000000000000
+      internalID: 4126742650370034277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_25
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 17
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d6e5cbfb29192f0800000000000000
+      internalID: -967831092711232231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_26
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 17
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b763a89974c94610800000000000000
+      internalID: 1606030768665225141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_27
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 17
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ed378ce5a1639e0800000000000000
+      internalID: -1642096019737682287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_28
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 17
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b1c009c252a0040800000000000000
+      internalID: 4614541641519995655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_29
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 17
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87806760f9171a10800000000000000
+      internalID: 1879999889767696267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff8e35aa6d8e2e640800000000000000
+      internalID: 5107900936069835007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_31
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a732b281890781b80800000000000000
+      internalID: -8423859304453692550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_32
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba172a1bcdb4a5e20800000000000000
+      internalID: 3340065484893745579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_33
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59b6cfc9e953a210800000000000000
+      internalID: 1343015974634699102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_34
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1eae0610c1246ad0800000000000000
+      internalID: -2710003966882697697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_hl_35
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e3968d70235e6d0800000000000000
+      internalID: -2961906170649297362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      darkGreen_icon_hl_0: -2396885208152653114
+      darkGreen_icon_hl_1: 190959379656439251
+      darkGreen_icon_hl_10: -7309755850439026082
+      darkGreen_icon_hl_11: 738042322680164979
+      darkGreen_icon_hl_12: 6527627088452505455
+      darkGreen_icon_hl_13: 3514678172308112628
+      darkGreen_icon_hl_14: 6401868565967974289
+      darkGreen_icon_hl_15: -4312094934331107698
+      darkGreen_icon_hl_16: 2031608893847142759
+      darkGreen_icon_hl_17: 941387568783126212
+      darkGreen_icon_hl_18: 2514256030608131530
+      darkGreen_icon_hl_19: 7917128824155014157
+      darkGreen_icon_hl_2: 3303200595926597602
+      darkGreen_icon_hl_20: 6353591212373099232
+      darkGreen_icon_hl_21: -1471290969730029585
+      darkGreen_icon_hl_22: 7376445626204989125
+      darkGreen_icon_hl_23: 3198280149105867688
+      darkGreen_icon_hl_24: 4126742650370034277
+      darkGreen_icon_hl_25: -967831092711232231
+      darkGreen_icon_hl_26: 1606030768665225141
+      darkGreen_icon_hl_27: -1642096019737682287
+      darkGreen_icon_hl_28: 4614541641519995655
+      darkGreen_icon_hl_29: 1879999889767696267
+      darkGreen_icon_hl_3: -7650294828142054719
+      darkGreen_icon_hl_30: 5107900936069835007
+      darkGreen_icon_hl_31: -8423859304453692550
+      darkGreen_icon_hl_32: 3340065484893745579
+      darkGreen_icon_hl_33: 1343015974634699102
+      darkGreen_icon_hl_34: -2710003966882697697
+      darkGreen_icon_hl_35: -2961906170649297362
+      darkGreen_icon_hl_4: 1776960297733554397
+      darkGreen_icon_hl_5: -8157831640350829985
+      darkGreen_icon_hl_6: 1919507824628207184
+      darkGreen_icon_hl_7: -8746474234918780473
+      darkGreen_icon_hl_8: -1763555694665889520
+      darkGreen_icon_hl_9: -9167991801737602491
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

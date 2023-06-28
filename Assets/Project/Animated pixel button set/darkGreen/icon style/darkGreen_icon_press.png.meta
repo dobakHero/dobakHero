@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: bc967524a4bba1b43b30c7cf51623ab8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -472869604349173337
+    second: darkGreen_icon_press_0
+  - first:
+      213: -5886028357410662138
+    second: darkGreen_icon_press_1
+  - first:
+      213: -3728268180538309222
+    second: darkGreen_icon_press_2
+  - first:
+      213: 700990297518494752
+    second: darkGreen_icon_press_3
+  - first:
+      213: -2328426388080247780
+    second: darkGreen_icon_press_4
+  - first:
+      213: -2018923495061386081
+    second: darkGreen_icon_press_5
+  - first:
+      213: 1593178371427329103
+    second: darkGreen_icon_press_6
+  - first:
+      213: 6982654182265625304
+    second: darkGreen_icon_press_7
+  - first:
+      213: 1125920366275780258
+    second: darkGreen_icon_press_8
+  - first:
+      213: -4211770340107322196
+    second: darkGreen_icon_press_9
+  - first:
+      213: -3975340184781934574
+    second: darkGreen_icon_press_10
+  - first:
+      213: 7650234587808994528
+    second: darkGreen_icon_press_11
+  - first:
+      213: -5919665776488229938
+    second: darkGreen_icon_press_12
+  - first:
+      213: 1877707107696855028
+    second: darkGreen_icon_press_13
+  - first:
+      213: -2332319202939212270
+    second: darkGreen_icon_press_14
+  - first:
+      213: 7759887616620853702
+    second: darkGreen_icon_press_15
+  - first:
+      213: -4717274847999240197
+    second: darkGreen_icon_press_16
+  - first:
+      213: -982542052971040122
+    second: darkGreen_icon_press_17
+  - first:
+      213: -4056089513324975115
+    second: darkGreen_icon_press_18
+  - first:
+      213: 1004221113981270544
+    second: darkGreen_icon_press_19
+  - first:
+      213: -5472729359907257938
+    second: darkGreen_icon_press_20
+  - first:
+      213: 2655609037789692956
+    second: darkGreen_icon_press_21
+  - first:
+      213: -8817485449172378419
+    second: darkGreen_icon_press_22
+  - first:
+      213: -1585779770302518506
+    second: darkGreen_icon_press_23
+  - first:
+      213: 6643595482453789892
+    second: darkGreen_icon_press_24
+  - first:
+      213: -173989100979760081
+    second: darkGreen_icon_press_25
+  - first:
+      213: -44800503526359373
+    second: darkGreen_icon_press_26
+  - first:
+      213: -748055203228645705
+    second: darkGreen_icon_press_27
+  - first:
+      213: 516466103712117080
+    second: darkGreen_icon_press_28
+  - first:
+      213: 1578697528941779114
+    second: darkGreen_icon_press_29
+  - first:
+      213: -5996407857797452641
+    second: darkGreen_icon_press_30
+  - first:
+      213: 984158582690298266
+    second: darkGreen_icon_press_31
+  - first:
+      213: 976104245545153075
+    second: darkGreen_icon_press_32
+  - first:
+      213: -4375323748926165297
+    second: darkGreen_icon_press_33
+  - first:
+      213: 8245883042573146831
+    second: darkGreen_icon_press_34
+  - first:
+      213: 6596024536777742674
+    second: darkGreen_icon_press_35
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: darkGreen_icon_press_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 80
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a120b7a9970079f0800000000000000
+      internalID: -472869604349173337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 80
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60959aaf460a05ea0800000000000000
+      internalID: -5886028357410662138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_2
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 80
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a954f9fc7d7824cc0800000000000000
+      internalID: -3728268180538309222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_3
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 80
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024d59a26fa6ab900800000000000000
+      internalID: 700990297518494752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_4
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 80
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1cb4dc5984cfafd0800000000000000
+      internalID: -2328426388080247780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_5
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 80
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c0d2827c75bf3e0800000000000000
+      internalID: -2018923495061386081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 64
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44e2cca94b1c1610800000000000000
+      internalID: 1593178371427329103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_7
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 64
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da965babfe57e060800000000000000
+      internalID: 6982654182265625304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_8
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 64
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aede359b9210af00800000000000000
+      internalID: 1125920366275780258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_9
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 64
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac706ac039cc85c0800000000000000
+      internalID: -4211770340107322196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_10
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 64
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210bcb80a21c4d8c0800000000000000
+      internalID: -3975340184781934574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_11
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 64
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e413ce23d71b2a60800000000000000
+      internalID: 7650234587808994528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 48
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3d16b075f19dda0800000000000000
+      internalID: -5919665776488229938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_13
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 48
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f74f7a7aa4fe0a10800000000000000
+      internalID: 1877707107696855028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_14
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 48
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e6cf5ca00f1afd0800000000000000
+      internalID: -2332319202939212270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_15
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 48
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c973a57ca8a0bb60800000000000000
+      internalID: 7759887616620853702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_16
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 48
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7de19d48fd88eb0800000000000000
+      internalID: -4717274847999240197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_17
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 48
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68237c3653f4d52f0800000000000000
+      internalID: -982542052971040122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 32
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fbe315e310e5b7c0800000000000000
+      internalID: -4056089513324975115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_19
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 32
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01afcc658c5bfed00800000000000000
+      internalID: 1004221113981270544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_20
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 32
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea180e694a5fc04b0800000000000000
+      internalID: -5472729359907257938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_21
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 32
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1485cf895e9ad420800000000000000
+      internalID: 2655609037789692956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_22
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 32
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc97e573bff1a580800000000000000
+      internalID: -8817485449172378419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_23
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 32
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b2e1363bd2ef9e0800000000000000
+      internalID: -1585779770302518506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 16
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc4c0b54eac23c50800000000000000
+      internalID: 6643595482453789892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_25
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 16
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24df41a5ddd59df0800000000000000
+      internalID: -173989100979760081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_26
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 16
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be7d8ded26d06ff0800000000000000
+      internalID: -44800503526359373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_27
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 16
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b68c2b81cf5e95f0800000000000000
+      internalID: -748055203228645705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_28
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 16
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8517a4a5f2bda2700800000000000000
+      internalID: 516466103712117080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_29
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 16
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa89c5cc909a8e510800000000000000
+      internalID: 1578697528941779114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c2f9bd2da78cca0800000000000000
+      internalID: -5996407857797452641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_31
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9938e3440f68ad00800000000000000
+      internalID: 984158582690298266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_32
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3323873c3a1db8d00800000000000000
+      internalID: 976104245545153075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_33
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fceece75b3ab743c0800000000000000
+      internalID: -4375323748926165297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_34
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca5dfb40f24f6270800000000000000
+      internalID: 8245883042573146831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkGreen_icon_press_35
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259d5647e59c98b50800000000000000
+      internalID: 6596024536777742674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      darkGreen_icon_press_0: -472869604349173337
+      darkGreen_icon_press_1: -5886028357410662138
+      darkGreen_icon_press_10: -3975340184781934574
+      darkGreen_icon_press_11: 7650234587808994528
+      darkGreen_icon_press_12: -5919665776488229938
+      darkGreen_icon_press_13: 1877707107696855028
+      darkGreen_icon_press_14: -2332319202939212270
+      darkGreen_icon_press_15: 7759887616620853702
+      darkGreen_icon_press_16: -4717274847999240197
+      darkGreen_icon_press_17: -982542052971040122
+      darkGreen_icon_press_18: -4056089513324975115
+      darkGreen_icon_press_19: 1004221113981270544
+      darkGreen_icon_press_2: -3728268180538309222
+      darkGreen_icon_press_20: -5472729359907257938
+      darkGreen_icon_press_21: 2655609037789692956
+      darkGreen_icon_press_22: -8817485449172378419
+      darkGreen_icon_press_23: -1585779770302518506
+      darkGreen_icon_press_24: 6643595482453789892
+      darkGreen_icon_press_25: -173989100979760081
+      darkGreen_icon_press_26: -44800503526359373
+      darkGreen_icon_press_27: -748055203228645705
+      darkGreen_icon_press_28: 516466103712117080
+      darkGreen_icon_press_29: 1578697528941779114
+      darkGreen_icon_press_3: 700990297518494752
+      darkGreen_icon_press_30: -5996407857797452641
+      darkGreen_icon_press_31: 984158582690298266
+      darkGreen_icon_press_32: 976104245545153075
+      darkGreen_icon_press_33: -4375323748926165297
+      darkGreen_icon_press_34: 8245883042573146831
+      darkGreen_icon_press_35: 6596024536777742674
+      darkGreen_icon_press_4: -2328426388080247780
+      darkGreen_icon_press_5: -2018923495061386081
+      darkGreen_icon_press_6: 1593178371427329103
+      darkGreen_icon_press_7: 6982654182265625304
+      darkGreen_icon_press_8: 1125920366275780258
+      darkGreen_icon_press_9: -4211770340107322196
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

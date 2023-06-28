@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: 8b18f4ce4935ad5448c79f534a345b6f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7062621492394725422
+    second: ligthGreen_icon_hl_0
+  - first:
+      213: -1762601988693848558
+    second: ligthGreen_icon_hl_1
+  - first:
+      213: 867182389845125428
+    second: ligthGreen_icon_hl_2
+  - first:
+      213: 6674875120388094367
+    second: ligthGreen_icon_hl_3
+  - first:
+      213: -9058199489334052558
+    second: ligthGreen_icon_hl_4
+  - first:
+      213: -5467693487074264577
+    second: ligthGreen_icon_hl_5
+  - first:
+      213: 4420115944142034432
+    second: ligthGreen_icon_hl_6
+  - first:
+      213: 9220043057194862597
+    second: ligthGreen_icon_hl_7
+  - first:
+      213: 5029917805345637332
+    second: ligthGreen_icon_hl_8
+  - first:
+      213: -8212056369692012681
+    second: ligthGreen_icon_hl_9
+  - first:
+      213: 1420155572077724484
+    second: ligthGreen_icon_hl_10
+  - first:
+      213: -5010277984606062325
+    second: ligthGreen_icon_hl_11
+  - first:
+      213: -5073325130919918040
+    second: ligthGreen_icon_hl_12
+  - first:
+      213: -8723474084342098693
+    second: ligthGreen_icon_hl_13
+  - first:
+      213: 561096615150503893
+    second: ligthGreen_icon_hl_14
+  - first:
+      213: -719810276153784373
+    second: ligthGreen_icon_hl_15
+  - first:
+      213: -7499425111733113077
+    second: ligthGreen_icon_hl_16
+  - first:
+      213: -2969463834435604493
+    second: ligthGreen_icon_hl_17
+  - first:
+      213: 8525752174439875901
+    second: ligthGreen_icon_hl_18
+  - first:
+      213: -968616532575597446
+    second: ligthGreen_icon_hl_19
+  - first:
+      213: -6873664188149183001
+    second: ligthGreen_icon_hl_20
+  - first:
+      213: -7425120082661056656
+    second: ligthGreen_icon_hl_21
+  - first:
+      213: -9048881883144740070
+    second: ligthGreen_icon_hl_22
+  - first:
+      213: -7329376189750516546
+    second: ligthGreen_icon_hl_23
+  - first:
+      213: -8601263008102429017
+    second: ligthGreen_icon_hl_24
+  - first:
+      213: 277431675117499086
+    second: ligthGreen_icon_hl_25
+  - first:
+      213: 1624202497093072695
+    second: ligthGreen_icon_hl_26
+  - first:
+      213: -8333656812811746811
+    second: ligthGreen_icon_hl_27
+  - first:
+      213: 6528893104897343905
+    second: ligthGreen_icon_hl_28
+  - first:
+      213: 7496105445773149160
+    second: ligthGreen_icon_hl_29
+  - first:
+      213: 4384615522085084328
+    second: ligthGreen_icon_hl_30
+  - first:
+      213: 6589141879258404489
+    second: ligthGreen_icon_hl_31
+  - first:
+      213: -5398571550281540218
+    second: ligthGreen_icon_hl_32
+  - first:
+      213: -3818394450436024483
+    second: ligthGreen_icon_hl_33
+  - first:
+      213: 7812792014848811950
+    second: ligthGreen_icon_hl_34
+  - first:
+      213: -7801757761669102994
+    second: ligthGreen_icon_hl_35
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 85
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e201a35f3d8730260800000000000000
+      internalID: 7062621492394725422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 85
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e818774daf987e0800000000000000
+      internalID: -1762601988693848558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 85
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439613ef9c9d80c00800000000000000
+      internalID: 867182389845125428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 85
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9933d69e8be1ac50800000000000000
+      internalID: 6674875120388094367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 85
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2397e9d8e8fca4280800000000000000
+      internalID: -9058199489334052558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_5
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 85
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9b83a1eb9de14b0800000000000000
+      internalID: -5467693487074264577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00650ac4808675d30800000000000000
+      internalID: 4420115944142034432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_7
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 68
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50808e58f4c24ff70800000000000000
+      internalID: 9220043057194862597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_8
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 68
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d30a05289bddc540800000000000000
+      internalID: 5029917805345637332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_9
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 68
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f0609bd3ae80e80800000000000000
+      internalID: -8212056369692012681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 68
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4430c7fe7f765b310800000000000000
+      internalID: 1420155572077724484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_11
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 68
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b097895f7bae77ab0800000000000000
+      internalID: -5010277984606062325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 51
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826c47d4cade799b0800000000000000
+      internalID: -5073325130919918040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_13
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 51
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4967b0a8effe680800000000000000
+      internalID: -8723474084342098693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_14
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 51
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d748be066a69c700800000000000000
+      internalID: 561096615150503893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_15
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 51
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc78d281e58b206f0800000000000000
+      internalID: -719810276153784373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_16
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 51
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0fe0833890bce790800000000000000
+      internalID: -7499425111733113077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_17
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 51
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ffa81f10685ac6d0800000000000000
+      internalID: -2969463834435604493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35c0886e6e815670800000000000000
+      internalID: 8525752174439875901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_19
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 34
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7cc2444568ce82f0800000000000000
+      internalID: -968616532575597446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_20
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 34
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed4b00d6d6db90a0800000000000000
+      internalID: -6873664188149183001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_21
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 34
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f5e52ff9ca4f890800000000000000
+      internalID: -7425120082661056656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_22
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 34
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13a0bcced9eb6280800000000000000
+      internalID: -9048881883144740070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_23
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 34
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4e6b82033d84a90800000000000000
+      internalID: -7329376189750516546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 17
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aec8569ddc22a880800000000000000
+      internalID: -8601263008102429017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_25
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 17
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2f1dc73a2a9d300800000000000000
+      internalID: 277431675117499086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_26
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 17
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737f882d0935a8610800000000000000
+      internalID: 1624202497093072695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_27
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 17
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50287584847e85c80800000000000000
+      internalID: -8333656812811746811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_28
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 17
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a147e5ffa94b9a50800000000000000
+      internalID: 6528893104897343905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_29
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 17
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e30e26df24870860800000000000000
+      internalID: 7496105445773149160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac9b8e269849dc30800000000000000
+      internalID: 4384615522085084328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_31
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986d8dfd0a5517b50800000000000000
+      internalID: 6589141879258404489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_32
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d50f227cb6415b0800000000000000
+      internalID: -5398571550281540218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_33
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5710716a76520bc0800000000000000
+      internalID: -3818394450436024483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_34
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3621d81fc9c6c60800000000000000
+      internalID: 7812792014848811950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ligthGreen_icon_hl_35
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e620118b6a69ab390800000000000000
+      internalID: -7801757761669102994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ligthGreen_icon_hl_0: 7062621492394725422
+      ligthGreen_icon_hl_1: -1762601988693848558
+      ligthGreen_icon_hl_10: 1420155572077724484
+      ligthGreen_icon_hl_11: -5010277984606062325
+      ligthGreen_icon_hl_12: -5073325130919918040
+      ligthGreen_icon_hl_13: -8723474084342098693
+      ligthGreen_icon_hl_14: 561096615150503893
+      ligthGreen_icon_hl_15: -719810276153784373
+      ligthGreen_icon_hl_16: -7499425111733113077
+      ligthGreen_icon_hl_17: -2969463834435604493
+      ligthGreen_icon_hl_18: 8525752174439875901
+      ligthGreen_icon_hl_19: -968616532575597446
+      ligthGreen_icon_hl_2: 867182389845125428
+      ligthGreen_icon_hl_20: -6873664188149183001
+      ligthGreen_icon_hl_21: -7425120082661056656
+      ligthGreen_icon_hl_22: -9048881883144740070
+      ligthGreen_icon_hl_23: -7329376189750516546
+      ligthGreen_icon_hl_24: -8601263008102429017
+      ligthGreen_icon_hl_25: 277431675117499086
+      ligthGreen_icon_hl_26: 1624202497093072695
+      ligthGreen_icon_hl_27: -8333656812811746811
+      ligthGreen_icon_hl_28: 6528893104897343905
+      ligthGreen_icon_hl_29: 7496105445773149160
+      ligthGreen_icon_hl_3: 6674875120388094367
+      ligthGreen_icon_hl_30: 4384615522085084328
+      ligthGreen_icon_hl_31: 6589141879258404489
+      ligthGreen_icon_hl_32: -5398571550281540218
+      ligthGreen_icon_hl_33: -3818394450436024483
+      ligthGreen_icon_hl_34: 7812792014848811950
+      ligthGreen_icon_hl_35: -7801757761669102994
+      ligthGreen_icon_hl_4: -9058199489334052558
+      ligthGreen_icon_hl_5: -5467693487074264577
+      ligthGreen_icon_hl_6: 4420115944142034432
+      ligthGreen_icon_hl_7: 9220043057194862597
+      ligthGreen_icon_hl_8: 5029917805345637332
+      ligthGreen_icon_hl_9: -8212056369692012681
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
