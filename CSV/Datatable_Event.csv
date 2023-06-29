@@ -1,0 +1,13 @@
+﻿ID,English,Korean,Buff_Amount,Buff_Duration
+int,string,string,float,int
+1,Sick,몸살,-0.2,3
+2,Passion,열정,0.2,3
+3,Inc_Tax,증세,0.25,0
+4,Closure,폐쇄,0,0
+5,Luck,행운,0.1,3
+6,Crackdown,단속,0,0
+7,Fine,벌금,-0.25,0
+8,Depression,우울증,0.5,3
+9,Enteritis,장염,0,3
+10,Joy,기쁨,15,0
+11,Misfortune,불행,15,0
