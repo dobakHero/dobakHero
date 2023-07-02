@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public Dictionary<string, string> ScriptList;
+
     #region Gold & Stat
 
     //재화
@@ -177,7 +179,7 @@ public class GameManager : MonoBehaviour
             //증세
             if (AppliedEvent.ContainsKey(3))
             {
-                tax = (int)(tax * EventList[3].BuffAmount);
+                tax = (int)(tax * EventList[3].Buff_Amount);
                 AppliedEvent.Remove(3);
             }
 
@@ -191,6 +193,9 @@ public class GameManager : MonoBehaviour
         }
         
         //포만감 감소
+        
+        //던전초기화
+        canEnterDungeon = true;
             
         //이벤트
         var randomValue = Random.Range(0f, 1f);
@@ -246,7 +251,7 @@ public class GameManager : MonoBehaviour
                         
                         break;
                     case 7: //벌금
-                        Gold -= (int)(Gold * EventList[7].BuffAmount);
+                        Gold -= (int)(Gold * EventList[7].Buff_Amount);
                         Debug.Log("벌금 이벤트 발생");
                         AppliedEvent.Remove(7);
                         break;
@@ -291,18 +296,18 @@ public class GameManager : MonoBehaviour
             }
         }
         
-        AppliedEvent.Add(randomValue, EventList[randomValue].Duration);
+        AppliedEvent.Add(randomValue, EventList[randomValue].Buff_Duration);
 
         //몸살 배열 추가
         if (randomValue == 1)
         {
-            PowerMultipleList.Add(EventList[1].English,EventList[1].BuffAmount);
+            PowerMultipleList.Add(EventList[1].English,EventList[1].Buff_Amount);
         }
         
         //열정 배열 추가
         if (randomValue == 2)
         {
-            PowerMultipleList.Add(EventList[2].English,EventList[2].BuffAmount);
+            PowerMultipleList.Add(EventList[2].English,EventList[2].Buff_Amount);
         }
     }
 
@@ -313,8 +318,18 @@ public class GameManager : MonoBehaviour
     private int _gamblingMaxCount = 3;
     private int _gamblingCurrentCount = 3;
 
+    public Dictionary<int, Gambling> GamblingList;
+
     #endregion
 
+    #region Dungeon
+
+    public Dictionary<int, Dungeon> DungeonList;
+
+    public bool canEnterDungeon = true;
+
+    #endregion
+    
     private void DataInitialize()
     {
         //AppliedEvent Assignment
@@ -324,8 +339,59 @@ public class GameManager : MonoBehaviour
         PowerMultipleList = new Dictionary<string, float>();
     }
 
-    public void LoadData()
+    private void LoadData()
     {
+        ScriptList = new Dictionary<string, string>();
+        var scriptCsv = CSVReader.Read("CSV/Datatable_Script");
+        foreach (var script in scriptCsv)
+        {
+            ScriptList.Add(script["English"].ToString(),script["Korean"].ToString());
+        }
+        
         EventList = new Dictionary<int, Event>();
+        var eventCsv = CSVReader.Read("CSV/Datatable_Event");
+        foreach (var events in eventCsv)
+        {
+            var temp = new Event
+            {
+                English = events["English"].ToString(),
+                Korean = events["Korean"].ToString(),
+                Buff_Amount = float.Parse(events["Buff_Amount"].ToString()),
+                Buff_Duration = int.Parse(events["Buff_Duration"].ToString())
+            };
+
+            EventList.Add(int.Parse(events["ID"].ToString()), temp);
+        }
+        
+        GamblingList = new Dictionary<int, Gambling>();
+        var gamblingCsv = CSVReader.Read("CSV/Datatable_Dobak");
+        foreach (var gambling in gamblingCsv)
+        {
+            var temp = new Gambling
+            {
+                English = gambling["English"].ToString(),
+                Korean = gambling["Korean"].ToString(),
+                Cost = int.Parse(gambling["Cost"].ToString()),
+                Reward = int.Parse(gambling["Reward"].ToString()),
+                Stress = int.Parse(gambling["Stress"].ToString())
+            };
+
+            GamblingList.Add(int.Parse(gambling["ID"].ToString()), temp);
+        }
+        
+        DungeonList = new Dictionary<int, Dungeon>();
+        var dungeonCsv = CSVReader.Read("CSV/Datatable_Dungeon");
+        foreach (var dungeon in dungeonCsv)
+        {
+            var temp = new Dungeon
+            {
+                English = dungeon["English"].ToString(),
+                Korean = dungeon["Korean"].ToString(),
+                Arrow = int.Parse(dungeon["Arrow"].ToString()),
+                Reward = float.Parse(dungeon["Reward"].ToString())
+            };
+
+            DungeonList.Add(int.Parse(dungeon["ID"].ToString()), temp);
+        }
     }
 }
