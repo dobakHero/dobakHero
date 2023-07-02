@@ -1,0 +1,5 @@
+﻿ID,English,Korean,Arrow,Reward
+int,string,string,int,float
+1,Monster_Normal,일반몬스터,5,0.2
+2,Monster_Elite,엘리트몬스터,7,0.5
+3,Monster_Boss,보스몬스터,10,1

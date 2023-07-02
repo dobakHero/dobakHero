@@ -1,0 +1,7 @@
+﻿ID,English,Korean,Cost,Reward,Stress
+int,string,string,int,int,int
+1,Slot_machine,슬롯머신,1,100,-10
+2,Horse_racing,경마,0,0,-10
+3,Black_Jack,블랙잭,0,0,-5
+4,Lottery,복권,10,100000,-5
+5,Roulette,룰렛,0,0,-10
