@@ -37,24 +37,34 @@ public class GameManager : MonoBehaviour
     {
         get
         {
+            // + -> *(합연산) -> 스트레스 감소
             var res = _power;
             
-            //스트레스로 인한 전투력 감소
-            var stressBuff = (int)(_power * 0.005) * Stress;
-            
-            //몸살로 인한 전투력 감소
-            if (AppliedEvent.ContainsKey(1))
+            //더하기
+            var powerPlusValue = 0;
+
+            foreach (var item in PowerPlusList)
             {
-                //전투력 계산 순서고려
-            }
-            
-            //열정으로 인한 전투력 증가
-            if (AppliedEvent.ContainsKey(2))
-            {
-                
+                powerPlusValue += item.Value;
             }
 
-            return res - stressBuff;
+            res += powerPlusValue;
+            
+            //곱하기
+
+            var powerMultipleValue = 0f;
+
+            foreach (var item in PowerMultipleList)
+            {
+                powerMultipleValue += item.Value;
+            }
+
+            res = (int)(res * powerMultipleValue);
+
+            //스트레스로 인한 전투력 감소
+            res = (int)((1 - Stress * 0.005) * res);
+
+            return res;
         }
         set
         {
@@ -73,6 +83,9 @@ public class GameManager : MonoBehaviour
             _power = value;
         }
     }
+
+    public Dictionary<string, int> PowerPlusList;
+    public Dictionary<string, float> PowerMultipleList;
 
     private int _level;
     public int Level
@@ -192,6 +205,17 @@ public class GameManager : MonoBehaviour
             if (item.Value == 0)
             {
                 //버프 아이콘 제거
+
+                if (item.Key == 1)
+                {
+                    PowerMultipleList.Remove(EventList[1].English);
+                }
+
+                if (item.Key == 2)
+                {
+                    PowerMultipleList.Remove(EventList[2].English);
+                }
+                
                 AppliedEvent.Remove(item.Key);
             }
             else
@@ -202,12 +226,15 @@ public class GameManager : MonoBehaviour
                 {
                     case 1: //몸살
                         //GameManager.cs 45줄
+                        Debug.Log("몸살 진행중");
                         break;
                     case 2: //열정
                         //GameManager.cs 51줄
+                        Debug.Log("열정 진행중");
                         break;
                     case 3: //증세
                         //GameManager.cs 153줄
+                        Debug.Log("증세 진행중");
                         break;
                     case 4: //폐쇄
                         
@@ -220,6 +247,7 @@ public class GameManager : MonoBehaviour
                         break;
                     case 7: //벌금
                         Gold -= (int)(Gold * EventList[7].BuffAmount);
+                        Debug.Log("벌금 이벤트 발생");
                         AppliedEvent.Remove(7);
                         break;
                     case 8: //우울증
@@ -229,10 +257,12 @@ public class GameManager : MonoBehaviour
                         break;
                     case 10://기쁨
                         Stress -= 15;
+                        Debug.Log("기쁨 이벤트 발생");
                         AppliedEvent.Remove(10);
                         break;
                     case 11://불행
                         Stress += 15;
+                        Debug.Log("불행 이벤트 발생");
                         AppliedEvent.Remove(11);
                         break;
                     default:
@@ -249,13 +279,31 @@ public class GameManager : MonoBehaviour
     
     private void DayEvent()
     {
-        int randomValue;
-        do
+        var randomValue = 0;
+        while (randomValue == 0 || AppliedEvent.ContainsKey(randomValue))
         {
             randomValue = Random.Range(0, EventList.Count);
-        } while (AppliedEvent.ContainsKey(randomValue));
+
+            //몸살과 열정은 중복 불가능
+            if ((randomValue == 1 && AppliedEvent.ContainsKey(2)) || (randomValue == 2 && AppliedEvent.ContainsKey(1)))
+            {
+                randomValue = 0;
+            }
+        }
         
         AppliedEvent.Add(randomValue, EventList[randomValue].Duration);
+
+        //몸살 배열 추가
+        if (randomValue == 1)
+        {
+            PowerMultipleList.Add(EventList[1].English,EventList[1].BuffAmount);
+        }
+        
+        //열정 배열 추가
+        if (randomValue == 2)
+        {
+            PowerMultipleList.Add(EventList[2].English,EventList[2].BuffAmount);
+        }
     }
 
     #endregion
@@ -271,6 +319,9 @@ public class GameManager : MonoBehaviour
     {
         //AppliedEvent Assignment
         AppliedEvent = new Dictionary<int, int>();
+
+        PowerPlusList = new Dictionary<string, int>();
+        PowerMultipleList = new Dictionary<string, float>();
     }
 
     public void LoadData()
