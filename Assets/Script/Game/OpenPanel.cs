@@ -10,6 +10,7 @@ public class OpenPanel : MonoBehaviour
     [SerializeField] private GameObject storyPanel;
     [SerializeField] private GameObject gamblingPanel;
     [SerializeField] private GameObject dungeonPanel;
+    [SerializeField] private GameObject shopPanel;
 
     private ManageDungeonPanel _manageDungeonPanel;
 
@@ -57,6 +58,14 @@ public class OpenPanel : MonoBehaviour
             }
             
             _manageDungeonPanel.EnterDungeon();
+        }
+    }
+
+    public void OpenShopPanel()
+    {
+        if (shopPanel)
+        {
+            shopPanel.SetActive(true);
         }
     }
 }
