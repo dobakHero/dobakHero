@@ -128,14 +128,18 @@ public class GameManager : MonoBehaviour
         get => _stress;
         set
         {
-            //우울증
-            if (AppliedEvent.ContainsKey(8))
+            foreach (var getEvent in AppliedEvent)
             {
-                var increaseStress = value - _stress;
-
-                if (increaseStress > 0)
+                if (getEvent.Key == 8)
                 {
-                    value = (int)(increaseStress * 1.5) + _stress;
+                    var increaseStress = value - _stress;
+
+                    if (increaseStress > 0)
+                    {
+                        value = (int)(increaseStress * 1.5) + _stress;
+                    }
+
+                    break;
                 }
             }
             
@@ -158,157 +162,16 @@ public class GameManager : MonoBehaviour
 
     public void NextDay()
     {
-        //요일 변경
-        if (Day != EDay.Sunday)
-        {
-            Day += 1;
-        }
-        else
-        {
-            Day = EDay.Monday;
-        }
         
-        //일요일 이벤트
-        if (Day == EDay.Sunday)
-        {
-            //세금
-            var tempChip = 1;
-
-            var tax = (int)(tempChip * 0.3 + Gold * 0.1);
-
-            //증세
-            if (AppliedEvent.ContainsKey(3))
-            {
-                tax = (int)(tax * EventList[3].Buff_Amount);
-                AppliedEvent.Remove(3);
-            }
-
-            Gold -= tax;
-        }
-        
-        //토요일 이벤트
-        if (Day == EDay.Saturday)
-        {
-            //복권
-        }
-        
-        //포만감 감소
-        
-        //던전초기화
-        canEnterDungeon = true;
-            
-        //이벤트
-        var randomValue = Random.Range(0f, 1f);
-        
-        if (randomValue <= 0.1f) //10%
-        {
-            DayEvent();
-        }
-
-        foreach (var item in AppliedEvent)
-        {
-            if (item.Value == 0)
-            {
-                //버프 아이콘 제거
-
-                if (item.Key == 1)
-                {
-                    PowerMultipleList.Remove(EventList[1].English);
-                }
-
-                if (item.Key == 2)
-                {
-                    PowerMultipleList.Remove(EventList[2].English);
-                }
-                
-                AppliedEvent.Remove(item.Key);
-            }
-            else
-            {
-                AppliedEvent[item.Key] = item.Value - 1;
-
-                switch (item.Key)
-                {
-                    case 1: //몸살
-                        //GameManager.cs 45줄
-                        Debug.Log("몸살 진행중");
-                        break;
-                    case 2: //열정
-                        //GameManager.cs 51줄
-                        Debug.Log("열정 진행중");
-                        break;
-                    case 3: //증세
-                        //GameManager.cs 153줄
-                        Debug.Log("증세 진행중");
-                        break;
-                    case 4: //폐쇄
-                        
-                        break;
-                    case 5: //행운
-                        
-                        break;
-                    case 6: //단속
-                        
-                        break;
-                    case 7: //벌금
-                        Gold -= (int)(Gold * EventList[7].Buff_Amount);
-                        Debug.Log("벌금 이벤트 발생");
-                        AppliedEvent.Remove(7);
-                        break;
-                    case 8: //우울증
-                        //GameManager.cs 116줄
-                        break;
-                    case 9: //장염
-                        break;
-                    case 10://기쁨
-                        Stress -= 15;
-                        Debug.Log("기쁨 이벤트 발생");
-                        AppliedEvent.Remove(10);
-                        break;
-                    case 11://불행
-                        Stress += 15;
-                        Debug.Log("불행 이벤트 발생");
-                        AppliedEvent.Remove(11);
-                        break;
-                    default:
-                        Debug.Log("Item CODE ERROR!!! Item.Key : " + item.Key);
-                        break;
-                }
-            }
-        }
     }
 
     //CSV에서 읽어온 Event 저장
     public Dictionary<int, Event> EventList;    //(ID, Event)
-    public Dictionary<int, int> AppliedEvent;   //(ID, Duration)
+    public List<KeyValuePair<int, int>> AppliedEvent;   //(ID, Duration)
     
     private void DayEvent()
     {
-        var randomValue = 0;
-        while (randomValue == 0 || AppliedEvent.ContainsKey(randomValue))
-        {
-            randomValue = Random.Range(0, EventList.Count);
-
-            //몸살과 열정은 중복 불가능
-            if ((randomValue == 1 && AppliedEvent.ContainsKey(2)) || (randomValue == 2 && AppliedEvent.ContainsKey(1)))
-            {
-                randomValue = 0;
-            }
-        }
         
-        AppliedEvent.Add(randomValue, EventList[randomValue].Buff_Duration);
-
-        //몸살 배열 추가
-        if (randomValue == 1)
-        {
-            PowerMultipleList.Add(EventList[1].English,EventList[1].Buff_Amount);
-        }
-        
-        //열정 배열 추가
-        if (randomValue == 2)
-        {
-            PowerMultipleList.Add(EventList[2].English,EventList[2].Buff_Amount);
-        }
     }
 
     #endregion
@@ -333,7 +196,7 @@ public class GameManager : MonoBehaviour
     private void DataInitialize()
     {
         //AppliedEvent Assignment
-        AppliedEvent = new Dictionary<int, int>();
+        AppliedEvent = new List<KeyValuePair<int, int>>();
 
         PowerPlusList = new Dictionary<string, int>();
         PowerMultipleList = new Dictionary<string, float>();

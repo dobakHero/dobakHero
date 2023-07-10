@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class OpenPanel : MonoBehaviour
 {
-    [SerializeField] private GameObject eventPanel;
     [SerializeField] private GameObject optionPanel;
     [SerializeField] private GameObject storyPanel;
     [SerializeField] private GameObject gamblingPanel;
@@ -19,14 +18,6 @@ public class OpenPanel : MonoBehaviour
         if (storyPanel)
         {
             storyPanel.SetActive(true);
-        }
-    }
-
-    public void OpenEventPanel()
-    {
-        if (eventPanel)
-        {
-            eventPanel.SetActive(true);
         }
     }
 

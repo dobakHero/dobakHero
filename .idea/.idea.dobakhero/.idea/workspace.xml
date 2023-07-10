@@ -13,8 +13,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Event.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Gambling.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/ClosePanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Gambling/SlotMachine/MoveHandle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/ManageDungeonPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/ManageGamePanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/MoveScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -98,6 +100,10 @@
       <workItem from="1688036090353" duration="3846000" />
       <workItem from="1688274880318" duration="14351000" />
       <workItem from="1688466628659" duration="664000" />
+      <workItem from="1688721565524" duration="7247000" />
+      <workItem from="1688883048767" duration="5000" />
+      <workItem from="1688883090097" duration="4733000" />
+      <workItem from="1688999356386" duration="1737000" />
     </task>
     <servers />
   </component>
