@@ -13,6 +13,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Event.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Gambling.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/ClosePanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/DebugScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Gambling/HorseRacing/ManageHorseRacing.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Gambling/SlotMachine/MoveHandle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/ManageDungeonPanel.cs" root0="FORCE_HIGHLIGHTING" />
@@ -103,7 +105,8 @@
       <workItem from="1688721565524" duration="7247000" />
       <workItem from="1688883048767" duration="5000" />
       <workItem from="1688883090097" duration="4733000" />
-      <workItem from="1688999356386" duration="1737000" />
+      <workItem from="1688999356386" duration="3448000" />
+      <workItem from="1689067173876" duration="9090000" />
     </task>
     <servers />
   </component>

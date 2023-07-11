@@ -12,6 +12,9 @@ public class MoveImage : MonoBehaviour
     private Image _image;
 
     private bool _isMove = true;
+    private bool _isSelected;
+
+    private int _curImageIdx;
 
     private void Start()
     {
@@ -22,6 +25,12 @@ public class MoveImage : MonoBehaviour
     private void OnEnable()
     {
         _isMove = true;
+        _isSelected = false;
+
+        var rand = Random.Range(0, imageList.Count);
+        _image.sprite = imageList[rand];
+
+        _curImageIdx = rand;
     }
 
     private void FixedUpdate()
@@ -34,7 +43,10 @@ public class MoveImage : MonoBehaviour
                 var localPosition = transform.localPosition;
                 localPosition = new Vector3(localPosition.x, -localPosition.y, localPosition.z);
                 transform.localPosition = localPosition;
-                _image.sprite = imageList[Random.Range(0, imageList.Count)];
+
+                var rand = Random.Range(0, imageList.Count);
+                _image.sprite = imageList[rand];
+                _curImageIdx = rand;
             }
         }
         else
@@ -45,6 +57,8 @@ public class MoveImage : MonoBehaviour
                 var localPosition = transform.localPosition;
                 localPosition = new Vector3(localPosition.x,Mathf.Lerp(localPosition.y, 0, 0.05f),localPosition.z);
                 transform.localPosition = localPosition;
+
+                _isSelected = true;
             }
             else if (transform.localPosition.y > 150)
             {
@@ -64,5 +78,15 @@ public class MoveImage : MonoBehaviour
     public void Stop()
     {
         _isMove = false;
+    }
+
+    public bool IsSelected()
+    {
+        return _isSelected;
+    }
+
+    public int GetCurImgIdx()
+    {
+        return _curImageIdx;
     }
 }

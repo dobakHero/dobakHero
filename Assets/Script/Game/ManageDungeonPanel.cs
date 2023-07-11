@@ -172,6 +172,8 @@ public class ManageDungeonPanel : MonoBehaviour
         else
         {
             //오답
+            _dungeonLevel++;
+            
             NextMonster();
         }
     }

@@ -5,9 +5,21 @@ using UnityEngine;
 public class ManageGambling : MonoBehaviour
 {
     [SerializeField] private GameObject slotMachinePanel;
-
+    [SerializeField] private GameObject horseRacingPanel;
+    
     public void OpenSlotMachinePanel()
     {
-        slotMachinePanel.SetActive(true);
+        if (slotMachinePanel)
+        {
+            slotMachinePanel.SetActive(true);
+        }
+    }
+
+    public void OpenHorseRacingPanel()
+    {
+        if (horseRacingPanel)
+        {
+            horseRacingPanel.SetActive(true);
+        }
     }
 }

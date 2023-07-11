@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     public int Chip { get; set; } = 0;
     
     //스텟
-    private int _power;
+    private int _power = 5000;
     public int Power
     {
         get
@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
             
             //곱하기
 
-            var powerMultipleValue = 0f;
+            var powerMultipleValue = 1f;
 
             foreach (var item in PowerMultipleList)
             {
@@ -89,7 +89,7 @@ public class GameManager : MonoBehaviour
     public Dictionary<string, int> PowerPlusList;
     public Dictionary<string, float> PowerMultipleList;
 
-    private int _level;
+    private int _level = 1;
     public int Level
     {
         get => _level;
@@ -168,11 +168,6 @@ public class GameManager : MonoBehaviour
     //CSV에서 읽어온 Event 저장
     public Dictionary<int, Event> EventList;    //(ID, Event)
     public List<KeyValuePair<int, int>> AppliedEvent;   //(ID, Duration)
-    
-    private void DayEvent()
-    {
-        
-    }
 
     #endregion
 
