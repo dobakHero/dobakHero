@@ -9,13 +9,16 @@ using Random = UnityEngine.Random;
 
 public class ManageHorseRacing : MonoBehaviour
 {
-    [SerializeField] private GameObject[] horses;
-    [SerializeField] private GameObject[] winRateTexts;
-    [SerializeField] private GameObject chipGameObject;
-    [SerializeField] private GameObject[] selectButtons;
-    [SerializeField] private GameObject exitButton;
-    private Image[] _buttonImages;
-    private TextMeshProUGUI _chipText;
+    private const int HorseNumber = 4;
+    private const float ChangeAlphaValue = 0.3f;
+    
+    [SerializeField] private MoveHorse[] horses;
+    [SerializeField] private TextMeshProUGUI[] winRateTexts;
+    [SerializeField] private Button exitButton;
+    [SerializeField] private Image[] buttonImages;
+    [SerializeField] private TextMeshProUGUI chipText;
+    [SerializeField] private GameObject resultImage;
+    [SerializeField] private TextMeshProUGUI resultText;
     private Button[] _buttons;
 
     private int[] _horseWinRate;
@@ -25,20 +28,13 @@ public class ManageHorseRacing : MonoBehaviour
 
     private int _selectHorseIdx;
 
-    private const int HorseNumber = 4;
-    private const float ChangeAlphaValue = 0.3f;
+    private bool _isRestart;
+    private bool _isWin;
+    
     private void Awake()
     {
-        _chipText = chipGameObject.GetComponent<TextMeshProUGUI>();
-        
         _horseWinRate = new int[HorseNumber];
         _horseDividend = new float[HorseNumber];
-        _buttonImages = new Image[HorseNumber];
-
-        for (var i = 0; i < HorseNumber; i++)
-        {
-            _buttonImages[i] = selectButtons[i].GetComponent<Image>();
-        }
 
         _buttons = GetComponentsInChildren<Button>();
     }
@@ -46,11 +42,16 @@ public class ManageHorseRacing : MonoBehaviour
     private void OnEnable()
     {
         _chipCount = 10;
-        _chipText.text = _chipCount.ToString();
+        chipText.text = _chipCount.ToString();
 
         _selectHorseIdx = -1;
 
-        foreach (var buttonImage in _buttonImages)
+        _isRestart = false;
+        _isWin = false;
+        
+        resultImage.SetActive(false);
+
+        foreach (var buttonImage in buttonImages)
         {
             buttonImage.color = new Color(buttonImage.color.r, buttonImage.color.g, buttonImage.color.b, 1f);
         }
@@ -58,13 +59,6 @@ public class ManageHorseRacing : MonoBehaviour
         foreach (var button in _buttons)
         {
             button.interactable = true;
-        }
-        
-        foreach (var horse in horses)
-        {
-            var localPosition = horse.transform.localPosition;
-            localPosition = new Vector3(localPosition.x, -40, localPosition.z);
-            horse.transform.localPosition = localPosition;
         }
 
         int[] arr = { 0, 1, 2, 3 };
@@ -109,7 +103,7 @@ public class ManageHorseRacing : MonoBehaviour
             _horseWinRate[i] = winRate;
             _horseDividend[i] = dividend;
 
-            winRateTexts[i].GetComponent<TextMeshProUGUI>().text = winRate + "% / " + dividend;
+            winRateTexts[i].text = "승률 : " + winRate + "%<br>배당률 : " + dividend + "배";
         }
     }
     
@@ -132,7 +126,7 @@ public class ManageHorseRacing : MonoBehaviour
         {
             _chipCount += 1;
 
-            _chipText.text = _chipCount.ToString();
+            chipText.text = _chipCount.ToString();
         }
     }
 
@@ -142,7 +136,7 @@ public class ManageHorseRacing : MonoBehaviour
         {
             _chipCount -= 1;
             
-            _chipText.text = _chipCount.ToString();
+            chipText.text = _chipCount.ToString();
         }
     }
 
@@ -152,11 +146,11 @@ public class ManageHorseRacing : MonoBehaviour
         {
             if (i == _selectHorseIdx)
             {
-                _buttonImages[i].color = new Color(_buttonImages[i].color.r, _buttonImages[i].color.g, _buttonImages[i].color.b, 1f);
+                buttonImages[i].color = new Color(buttonImages[i].color.r, buttonImages[i].color.g, buttonImages[i].color.b, 1f);
             }
             else
             {
-                _buttonImages[i].color = new Color(_buttonImages[i].color.r, _buttonImages[i].color.g, _buttonImages[i].color.b, ChangeAlphaValue);
+                buttonImages[i].color = new Color(buttonImages[i].color.r, buttonImages[i].color.g, buttonImages[i].color.b, ChangeAlphaValue);
             }
         }
     }
@@ -191,43 +185,77 @@ public class ManageHorseRacing : MonoBehaviour
 
     public void RaceStart()
     {
+        if (_selectHorseIdx == -1 || _chipCount > GameManager.Instance.Chip)
+            return;
+
+        GameManager.Instance.Chip -= _chipCount;
+        GameManager.Instance.Stress -= 10;
+        
         foreach (var button in _buttons)
         {
             button.interactable = false;
         }
         
         //경주 시작
-        var rand = Random.Range(1, 11);
-        var win = 0;
-        switch (rand)
-        {
-            case 1:
-            case 2:
-            case 3:
-            case 4:
-                //40% 승리
-                win = 4;
-                break;
-            case 5:
-            case 6:
-            case 7:
-                //30% 승리
-                win = 3;
-                break;
-            case 8:
-            case 9:
-                //20% 승리
-                win = 2;
-                break;
-            case 10:
-                //10% 승리
-                win = 1;
-                break;
-        }
+        var rand = Random.Range(0f, 1f);    //우승말 고르기
+        Debug.Log(rand);
 
+        if (rand <= 0.4f)
+        {
+            CheckWinHorse(40);
+        }
+        else if (rand <= 0.7f)
+        {
+            CheckWinHorse(30);
+        }
+        else if (rand <= 0.9f)
+        {
+            CheckWinHorse(20);
+        }
+        else
+        {
+            CheckWinHorse(10);
+        }
+    }
+
+    private void CheckWinHorse(int winRate)
+    {
         for (var i = 0; i < HorseNumber; i++)
         {
-            
+            if (_horseWinRate[i] == winRate)
+            {
+                horses[i].Move(true);
+                
+                Debug.Log(i);
+            }
+            else
+            {
+                horses[i].Move(false);
+            }
         }
+    }
+
+    public void FinishMove()
+    {
+        exitButton.interactable = true;
+        _isRestart = true;
+        //패배 승리 이미지
+        if (_isWin)
+        {
+            resultText.text = "승리";
+            GameManager.Instance.Chip += (int)(_chipCount * _horseDividend[_selectHorseIdx]);
+        }
+        else
+        {
+            resultText.text = "패배";
+        }
+        
+        resultImage.SetActive(true);
+    }
+
+    public void Restart()
+    {
+        if(_isRestart)
+            gameObject.SetActive(true);
     }
 }

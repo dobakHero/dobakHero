@@ -18,4 +18,9 @@ public class DebugScript : MonoBehaviour
     {
         GameManager.Instance.Stress -= 10;
     }
+
+    public void GetChip()
+    {
+        GameManager.Instance.Chip += 100;
+    }
 }

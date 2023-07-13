@@ -102,12 +102,4 @@ public class ManageSlotMachine : MonoBehaviour
             }
         }
     }
-
-    private void OnDisable()
-    {
-        if (_isSlot1Stop == true && _isSlot3Stop == false)
-        {
-            GameManager.Instance.Chip += 1;
-        }
-    }
 }

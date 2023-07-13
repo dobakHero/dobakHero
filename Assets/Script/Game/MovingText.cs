@@ -6,15 +6,11 @@ using UnityEngine;
 
 public class MovingText : MonoBehaviour
 {
-    private Transform _transform;
-    
+    [SerializeField] private TextMeshProUGUI textMeshProUGUI;
     void Start()
     {
-        _transform = GetComponent<Transform>();
-
-        if (_transform)
-        {
-            _transform.DOMoveY(558, 10, true);
-        }
+        textMeshProUGUI.text = GameManager.Instance.ScriptList["Script_Start"];
+        
+        transform.DOMoveY(3, 10);
     }
 }

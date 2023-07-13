@@ -29,7 +29,7 @@ public class MoveHandle : MonoBehaviour
 
         if (_scrollbar.interactable == false)
         {
-            _scrollbar.value = Mathf.Lerp(_scrollbar.value, 0, 0.05f);
+            _scrollbar.value = Mathf.Lerp(_scrollbar.value, 0, 0.005f);
         }
 
         if (_scrollbar.value < 0.01)

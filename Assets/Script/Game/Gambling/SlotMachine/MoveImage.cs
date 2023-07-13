@@ -7,7 +7,6 @@ using Random = UnityEngine.Random;
 
 public class MoveImage : MonoBehaviour
 {
-    public int speed;
     [SerializeField] private List<Sprite> imageList;
     private Image _image;
 
@@ -16,19 +15,52 @@ public class MoveImage : MonoBehaviour
 
     private int _curImageIdx;
 
-    private void Start()
+    private bool _isFirst;
+    
+    private const int Speed = 5;
+
+    private void Awake()
     {
         _image = GetComponent<Image>();
-        _image.sprite = imageList[Random.Range(0, 5)];
+        _image.sprite = imageList[Random.Range(0, imageList.Count)];
+
+        Debug.Log(transform.localPosition.y);
+        
+        if (transform.localPosition.y < 200f)
+        {
+            _isFirst = true;
+        }
+        else
+        {
+            _isFirst = false;
+        }
+        
+        Debug.Log(_isFirst);
     }
 
     private void OnEnable()
     {
         _isMove = true;
         _isSelected = false;
+        
+        if (_isFirst)
+        {
+            var localPosition = transform.localPosition;
+            localPosition = new Vector3(localPosition.x,0,localPosition.z);
+            transform.localPosition = localPosition;
+        }
+        else
+        {
+            var localPosition = transform.localPosition;
+            localPosition = new Vector3(localPosition.x,300,localPosition.z);
+            transform.localPosition = localPosition;
+        }
 
         var rand = Random.Range(0, imageList.Count);
-        _image.sprite = imageList[rand];
+        if (_image)
+        {
+            _image.sprite = imageList[rand];
+        }
 
         _curImageIdx = rand;
     }
@@ -37,11 +69,11 @@ public class MoveImage : MonoBehaviour
     {
         if (_isMove)
         {
-            transform.Translate(Vector3.down * (speed * Time.deltaTime));
+            transform.Translate(Vector3.down * (Speed * Time.deltaTime));
             if (transform.localPosition.y < -300)
             {
                 var localPosition = transform.localPosition;
-                localPosition = new Vector3(localPosition.x, -localPosition.y, localPosition.z);
+                localPosition = new Vector3(localPosition.x, 300, localPosition.z);
                 transform.localPosition = localPosition;
 
                 var rand = Random.Range(0, imageList.Count);

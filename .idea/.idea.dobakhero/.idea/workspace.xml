@@ -14,6 +14,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Gambling.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/ClosePanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/DebugScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Gambling/BlackJack/BlackJackHand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Gambling/BlackJack/Card.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Gambling/BlackJack/ChangeCardInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Gambling/BlackJack/ManageBlackJack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Gambling/HorseRacing/ManageHorseRacing.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Gambling/SlotMachine/MoveHandle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -107,6 +111,8 @@
       <workItem from="1688883090097" duration="4733000" />
       <workItem from="1688999356386" duration="3448000" />
       <workItem from="1689067173876" duration="9090000" />
+      <workItem from="1689221209287" duration="1828000" />
+      <workItem from="1689226621821" duration="18942000" />
     </task>
     <servers />
   </component>

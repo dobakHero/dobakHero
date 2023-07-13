@@ -150,6 +150,7 @@ public class ManageDungeonPanel : MonoBehaviour
                     //보스몬스터
                     GameManager.Instance.Gold += (int)(_enterPower * GameManager.Instance.DungeonList[3].Reward);
                     GameManager.Instance.Stress += 5;
+                    GameManager.Instance.Level += 1;
                 }
                 else if (_dungeonLevel % 5 == 0)
                 {

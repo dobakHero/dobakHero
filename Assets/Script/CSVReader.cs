@@ -27,7 +27,7 @@ public class CSVReader : MonoBehaviour
             var entry = new Dictionary<string, object>();
             for(var j=0; j < header.Length && j < values.Length; j++ ) {
                 string value = values[j];
-                value = value.TrimStart(TRIM_CHARS).TrimEnd(TRIM_CHARS).Replace("\\", "");
+                value = value.TrimStart(TRIM_CHARS).TrimEnd(TRIM_CHARS).Replace("\\", "").Replace("n", "<br>");
                 object finalvalue = value;
                 int n;
                 float f;
