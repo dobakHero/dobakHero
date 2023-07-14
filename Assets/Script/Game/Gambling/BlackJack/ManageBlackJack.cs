@@ -107,7 +107,7 @@ public class ManageBlackJack : MonoBehaviour
         bettingPanel.SetActive(false);
 
         GameManager.Instance.Chip -= _chipCount;
-        GameManager.Instance.Stress -= 5;
+        GameManager.Instance.Stress += GameManager.Instance.GamblingList[3].Stress;
 
         ShuffleArray(_deck);
 

@@ -189,7 +189,7 @@ public class ManageHorseRacing : MonoBehaviour
             return;
 
         GameManager.Instance.Chip -= _chipCount;
-        GameManager.Instance.Stress -= 10;
+        GameManager.Instance.Stress += GameManager.Instance.GamblingList[2].Stress;
         
         foreach (var button in _buttons)
         {

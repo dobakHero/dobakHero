@@ -178,6 +178,8 @@ public class GameManager : MonoBehaviour
 
     public Dictionary<int, Gambling> GamblingList;
 
+    public List<int> lotteryList;
+
     #endregion
 
     #region Dungeon
@@ -195,6 +197,8 @@ public class GameManager : MonoBehaviour
 
         PowerPlusList = new Dictionary<string, int>();
         PowerMultipleList = new Dictionary<string, float>();
+
+        lotteryList = new List<int>();
     }
 
     private void LoadData()
