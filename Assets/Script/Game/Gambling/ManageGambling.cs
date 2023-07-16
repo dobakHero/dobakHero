@@ -7,6 +7,7 @@ public class ManageGambling : MonoBehaviour
     [SerializeField] private GameObject slotMachinePanel;
     [SerializeField] private GameObject horseRacingPanel;
     [SerializeField] private GameObject blackJackPanel;
+    [SerializeField] private GameObject lotteryPanel;
     
     public void OpenSlotMachinePanel()
     {
@@ -29,6 +30,14 @@ public class ManageGambling : MonoBehaviour
         if (blackJackPanel)
         {
             blackJackPanel.SetActive(true);
+        }
+    }
+
+    public void OpenLotteryPanel()
+    {
+        if (lotteryPanel)
+        {
+            lotteryPanel.SetActive(true);
         }
     }
 }
