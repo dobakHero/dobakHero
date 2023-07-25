@@ -10,7 +10,9 @@ public class ManageDungeonPanel : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] private Image monsterImage;
-    [SerializeField] private List<Sprite> monsterSpriteList;
+    [SerializeField] private List<Sprite> normalMonsterSpriteList;
+    [SerializeField] private List<Sprite> eliteMonsterSpriteList;
+    [SerializeField] private List<Sprite> bossMonsterSpriteList;
     [SerializeField] private GameObject patternBox;
     [SerializeField] private GameObject playerInputBox;
     [SerializeField] private List<Sprite> arrowSpriteList;
@@ -66,21 +68,35 @@ public class ManageDungeonPanel : MonoBehaviour
 
     private void SpawnMonster()
     {
-        monsterImage.sprite = monsterSpriteList[(_dungeonLevel - 1) % monsterSpriteList.Count];
-
+        int idx;
         if (_dungeonLevel % 10 == 0)
         {
             //보스몬스터
+            idx = Random.Range(0, bossMonsterSpriteList.Count);
+            monsterImage.sprite = bossMonsterSpriteList[idx];
+
+            monsterImage.transform.localScale = new Vector3(2f, 2f, 2f);
+            
             SpawnPattern(GameManager.Instance.DungeonList[3].Arrow);
         }
         else if (_dungeonLevel % 5 == 0)
         {
             //엘리트몬스터
+            idx = Random.Range(0, eliteMonsterSpriteList.Count);
+            monsterImage.sprite = eliteMonsterSpriteList[idx];
+
+            monsterImage.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+            
             SpawnPattern(GameManager.Instance.DungeonList[2].Arrow);
         }
         else
         {
             //일반몬스터
+            idx = Random.Range(0, normalMonsterSpriteList.Count);
+            monsterImage.sprite = normalMonsterSpriteList[idx];
+
+            monsterImage.transform.localScale = new Vector3(1f, 1f, 1f);
+            
             SpawnPattern(GameManager.Instance.DungeonList[1].Arrow);
         }
     }
@@ -91,6 +107,7 @@ public class ManageDungeonPanel : MonoBehaviour
         {
             var pattern = ObjectPool.Instance.GetPooledObject("Pattern");
             pattern.transform.parent = patternBox.transform;
+            pattern.transform.localScale = Vector3.one;
 
             var arrow = Random.Range(1, 5);
             _pattern.Add(arrow);
@@ -141,6 +158,7 @@ public class ManageDungeonPanel : MonoBehaviour
             var arrow = ObjectPool.Instance.GetPooledObject("Pattern");
             arrow.transform.parent = playerInputBox.transform;
             arrow.GetComponent<Image>().sprite = arrowSpriteList[(int)eArrow - 1];
+            arrow.transform.localScale = Vector3.one;
 
             if (_pattern.Count == 0)
             {

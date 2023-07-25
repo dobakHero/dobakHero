@@ -1,9 +1,23 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ManageOptionPanel : MonoBehaviour
 {
+    [SerializeField] private Slider bgmSlider;
+    [SerializeField] private Slider effectSlider;
+    [SerializeField] private AudioSource bgmAudioSource;
+
+    private void Update()
+    {
+        if (bgmSlider && bgmAudioSource)
+        {
+            bgmAudioSource.volume = bgmSlider.value;
+        }
+    }
+
     public void ShutDown()
     {
 #if UNITY_EDITOR        //에디터에서만 실행되는 코드

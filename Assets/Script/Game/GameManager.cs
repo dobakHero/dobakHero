@@ -160,11 +160,6 @@ public class GameManager : MonoBehaviour
 
     public EDay Day { get; set; } = EDay.Monday;
 
-    public void NextDay()
-    {
-        
-    }
-
     //CSV에서 읽어온 Event 저장
     public Dictionary<int, Event> EventList;    //(ID, Event)
     public List<KeyValuePair<int, int>> AppliedEvent;   //(ID, Duration)
@@ -173,12 +168,14 @@ public class GameManager : MonoBehaviour
 
     #region Gambling
 
-    private int _gamblingMaxCount = 3;
-    private int _gamblingCurrentCount = 3;
+    [HideInInspector] public int gamblingMaxCount = 3;
+    [HideInInspector] public int gamblingCurrentCount = 3;
 
     public Dictionary<int, Gambling> GamblingList;
 
     public List<int> lotteryList;
+    
+    
 
     #endregion
 
@@ -186,7 +183,7 @@ public class GameManager : MonoBehaviour
 
     public Dictionary<int, Dungeon> DungeonList;
 
-    public bool canEnterDungeon = true;
+    [HideInInspector] public bool canEnterDungeon = true;
 
     #endregion
     

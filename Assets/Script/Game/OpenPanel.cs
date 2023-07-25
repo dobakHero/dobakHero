@@ -19,6 +19,26 @@ public class OpenPanel : MonoBehaviour
         {
             storyPanel.SetActive(true);
         }
+        
+        if (optionPanel)
+        {
+            optionPanel.SetActive(false);
+        }
+
+        if (gamblingPanel)
+        {
+            gamblingPanel.SetActive(false);
+        }
+
+        if (dungeonPanel)
+        {
+            dungeonPanel.SetActive(false);
+        }
+
+        if (shopPanel)
+        {
+            shopPanel.SetActive(false);
+        }
     }
 
     public void OpenOptionPanel()

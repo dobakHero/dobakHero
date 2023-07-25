@@ -48,6 +48,8 @@ public class ManageSlotMachine : MonoBehaviour
             
             GameManager.Instance.Chip -= GameManager.Instance.GamblingList[1].Cost;
             
+            GameManager.Instance.gamblingCurrentCount -= 1;
+            
             _isSlot1Stop = true;
 
             foreach (var slot1Child in _slot1Children)

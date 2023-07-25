@@ -109,6 +109,8 @@ public class ManageBlackJack : MonoBehaviour
         GameManager.Instance.Chip -= _chipCount;
         GameManager.Instance.Stress += GameManager.Instance.GamblingList[3].Stress;
 
+        GameManager.Instance.gamblingCurrentCount -= 1;
+
         ShuffleArray(_deck);
 
         dealerHand.BackDraw(_deck[_deckIdx++]);

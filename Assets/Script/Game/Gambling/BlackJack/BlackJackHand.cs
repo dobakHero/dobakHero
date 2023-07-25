@@ -15,6 +15,9 @@ public class BlackJackHand : MonoBehaviour
     private int _aceCount;
     private int _numberSum;
 
+    private EMark _hiddenMark;
+    private int _hiddenNum;
+
     private void Awake()
     {
         _cards = new List<GameObject>();
@@ -52,6 +55,9 @@ public class BlackJackHand : MonoBehaviour
         cardObj.transform.parent = transform;
         cardObj.transform.localPosition = deckObject.transform.localPosition;
         cardObj.transform.localScale = Vector3.one;
+
+        _hiddenNum = card.Number;
+        _hiddenMark = card.Mark;
         
         _cards.Add(cardObj);
         
@@ -135,6 +141,6 @@ public class BlackJackHand : MonoBehaviour
 
     public void OpenHiddenCard()
     {
-        
+        _cards[0].GetComponent<ChangeCardInfo>().ChangeInfo(_hiddenNum,_hiddenMark);
     }
 }

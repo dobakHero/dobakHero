@@ -37,6 +37,8 @@ public class ManageLottery : MonoBehaviour
         GameManager.Instance.Chip -= GameManager.Instance.GamblingList[4].Cost;
         GameManager.Instance.Stress += GameManager.Instance.GamblingList[4].Stress;
         
+        GameManager.Instance.gamblingCurrentCount -= 1;
+        
         GameManager.Instance.lotteryList.Add(sum);
     }
 }

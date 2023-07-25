@@ -58,22 +58,90 @@ public class ManageGamePanel : MonoBehaviour
     {
         if (_goldText)
         {
-            _goldText.text = GameManager.Instance.Gold.ToString();
+            var gold = GameManager.Instance.Gold;
+            string goldText;
+            if (gold > 1000000)
+            {
+                gold /= 1000000;
+                goldText = gold + "M";
+            }
+            else if (gold > 1000)
+            {
+                gold /= 1000;
+                goldText = gold + "K";
+            }
+            else
+            {
+                goldText = gold.ToString();
+            }
+
+            _goldText.text = goldText;
         }
 
         if (_chipText)
         {
-            _chipText.text = GameManager.Instance.Chip.ToString();
+            var chip = GameManager.Instance.Chip;
+            string chipText;
+            if (chip > 1000000)
+            {
+                chip /= 1000000;
+                chipText = chip + "M";
+            }
+            else if (chip > 1000)
+            {
+                chip /= 1000;
+                chipText = chip + "K";
+            }
+            else
+            {
+                chipText = chip.ToString();
+            }
+
+            _chipText.text = chipText;
         }
 
         if (_powerText)
         {
-            _powerText.text = GameManager.Instance.Power.ToString();
+            var power = GameManager.Instance.Power;
+            string powerText;
+            if (power > 1000000)
+            {
+                power /= 1000000;
+                powerText = power + "M";
+            }
+            else if (power > 1000)
+            {
+                power /= 1000;
+                powerText = power + "K";
+            }
+            else
+            {
+                powerText = power.ToString();
+            }
+
+            _powerText.text = powerText;
         }
 
         if (_levelText)
         {
-            _levelText.text = GameManager.Instance.Level.ToString();
+            var level = GameManager.Instance.Level;
+            string levelText;
+            if (level > 1000000)
+            {
+                level /= 1000000;
+                levelText = level + "M";
+            }
+            else if (level > 1000)
+            {
+                level /= 1000;
+                levelText = level + "K";
+            }
+            else
+            {
+                levelText = level.ToString();
+            }
+
+            _levelText.text = levelText;
         }
 
         if (_slider)
@@ -134,11 +202,12 @@ public class ManageGamePanel : MonoBehaviour
         {
             //복권
         }
-        
-        //포만감 감소
-        
+
         //던전초기화
         GameManager.Instance.canEnterDungeon = true;
+        
+        //도박초기화
+        GameManager.Instance.gamblingCurrentCount = GameManager.Instance.gamblingMaxCount;
             
         //이벤트
         var randomValue = Random.Range(0f, 1f);

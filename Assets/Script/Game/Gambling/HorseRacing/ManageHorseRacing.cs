@@ -185,11 +185,13 @@ public class ManageHorseRacing : MonoBehaviour
 
     public void RaceStart()
     {
-        if (_selectHorseIdx == -1 || _chipCount > GameManager.Instance.Chip)
+        if (_selectHorseIdx == -1 || _chipCount > GameManager.Instance.Chip || GameManager.Instance.gamblingCurrentCount == 0)
             return;
 
         GameManager.Instance.Chip -= _chipCount;
         GameManager.Instance.Stress += GameManager.Instance.GamblingList[2].Stress;
+        
+        GameManager.Instance.gamblingCurrentCount -= 1;
         
         foreach (var button in _buttons)
         {
@@ -198,7 +200,6 @@ public class ManageHorseRacing : MonoBehaviour
         
         //경주 시작
         var rand = Random.Range(0f, 1f);    //우승말 고르기
-        Debug.Log(rand);
 
         if (rand <= 0.4f)
         {
@@ -225,8 +226,11 @@ public class ManageHorseRacing : MonoBehaviour
             if (_horseWinRate[i] == winRate)
             {
                 horses[i].Move(true);
-                
-                Debug.Log(i);
+
+                if (_selectHorseIdx == i)
+                {
+                    _isWin = true;
+                }
             }
             else
             {
