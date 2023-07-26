@@ -1,0 +1,6 @@
+﻿ID,English,Korean,Amount,Max
+int,string,string,float,int
+1,More_Chip,도박 승리시 칩 획득량 증가,0.01,50
+2,More_Gold,던전에서의 골드 획득량 증가,0.02,50
+3,More_Time,던전 시간 증가,2,30
+4,Less_Stress,스트레스 획득량 감소,0.005,50
