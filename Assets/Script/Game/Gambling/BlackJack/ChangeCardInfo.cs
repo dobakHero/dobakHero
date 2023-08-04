@@ -21,6 +21,14 @@ public class ChangeCardInfo : MonoBehaviour
             _ => mark.sprite
         };
 
-        number.text = n.ToString();
+        var cardNum = n switch
+        {
+            1 => "A",
+            11 => "J",
+            12 => "Q",
+            13 => "K",
+            _ => n.ToString()
+        };
+        number.text = cardNum;
     }
 }

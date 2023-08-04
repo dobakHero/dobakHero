@@ -16,6 +16,8 @@ public class ManageBlackJack : MonoBehaviour
 
     [SerializeField] private Button drawBtn;
     [SerializeField] private Button gameEndBtn;
+
+    [SerializeField] private ManageRoulette manageRoulette;
     
     private Card[] _deck;
 
@@ -139,12 +141,36 @@ public class ManageBlackJack : MonoBehaviour
         {
             if (userHand.SumCard() == 21)
             {
-                GameManager.Instance.Chip += (int)(_chipCount * 2.5f);
+                var reward = (int)(_chipCount * 2.5f);
+                
+                //선조의 축복
+                reward = (int)(reward * (1 + GameManager.Instance.blessChipLevel * GameManager.Instance.BlessList[1].Amount));
+                
+                //돼지머리
+                if (GameManager.Instance.hasPighead)
+                    reward = (int)(reward * (1 + GameManager.Instance.ShopList[5].Reward));
+
+                GameManager.Instance.Chip += reward;
             }
             else
             {
-                GameManager.Instance.Chip += _chipCount * 2;
+                var reward = (int)(_chipCount * 2f);
+                
+                //선조의 축복
+                reward = (int)(reward * (1 + GameManager.Instance.blessChipLevel * GameManager.Instance.BlessList[1].Amount));
+                
+                //돼지머리
+                if (GameManager.Instance.hasPighead)
+                    reward = (int)(reward * (1 + GameManager.Instance.ShopList[5].Reward));
+
+                GameManager.Instance.Chip += reward;
             }
+            
+            EffectManager.Instance.PlayDobakVictory();
+        }
+        else
+        {
+            EffectManager.Instance.PlayDobakDefeat();
         }
         
         dealerHand.OpenHiddenCard();

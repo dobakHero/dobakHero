@@ -16,7 +16,7 @@ public class ManageLottery : MonoBehaviour
 
     public void BuyLottery()
     {
-        if (GameManager.Instance.Chip < GameManager.Instance.GamblingList[4].Cost || GameManager.Instance.Day is EDay.Saturday or EDay.Sunday)
+        if (GameManager.Instance.Chip < GameManager.Instance.GamblingList[4].Cost || GameManager.Instance.Day is EDay.Saturday or EDay.Sunday || GameManager.Instance.gamblingCurrentCount <= 0)
             return;
 
         var sum = 0;

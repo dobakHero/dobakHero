@@ -8,5 +8,7 @@ public class MoveScene : MonoBehaviour
     public void MoveGameScene()
     {
         SceneManager.LoadScene("GameScene");
+        
+        
     }
 }

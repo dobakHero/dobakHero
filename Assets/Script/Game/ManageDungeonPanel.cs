@@ -50,7 +50,7 @@ public class ManageDungeonPanel : MonoBehaviour
     {
         _dungeonLevel = 1;
         
-        _dungeonTime = DefaultTime;
+        _dungeonTime = DefaultTime + GameManager.Instance.BlessList[3].Amount * GameManager.Instance.blessDungeonLevel;
         _monsterTime = DefaultMonsterTime;
 
         timerText.text = (int)_dungeonTime / 60 + " : " + $"{(int)_dungeonTime % 60:D2}";
@@ -78,6 +78,8 @@ public class ManageDungeonPanel : MonoBehaviour
             monsterImage.transform.localScale = new Vector3(2f, 2f, 2f);
             
             SpawnPattern(GameManager.Instance.DungeonList[3].Arrow);
+            
+            EffectManager.Instance.PlayMonsterBoss();
         }
         else if (_dungeonLevel % 5 == 0)
         {
@@ -88,6 +90,8 @@ public class ManageDungeonPanel : MonoBehaviour
             monsterImage.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
             
             SpawnPattern(GameManager.Instance.DungeonList[2].Arrow);
+            
+            EffectManager.Instance.PlayMonsterElite();
         }
         else
         {
@@ -98,6 +102,8 @@ public class ManageDungeonPanel : MonoBehaviour
             monsterImage.transform.localScale = new Vector3(1f, 1f, 1f);
             
             SpawnPattern(GameManager.Instance.DungeonList[1].Arrow);
+            
+            EffectManager.Instance.PlayMonsterNormal();
         }
     }
 
@@ -166,20 +172,26 @@ public class ManageDungeonPanel : MonoBehaviour
                 if (_dungeonLevel % 10 == 0)
                 {
                     //보스몬스터
-                    GameManager.Instance.Gold += (int)(_enterPower * GameManager.Instance.DungeonList[3].Reward);
+                    GameManager.Instance.Gold += (int)(_enterPower * GameManager.Instance.DungeonList[3].Reward *
+                                                       (1 + GameManager.Instance.BlessList[2].Amount *
+                                                           GameManager.Instance.blessGoldLevel));
                     GameManager.Instance.Stress += 5;
                     GameManager.Instance.Level += 1;
                 }
                 else if (_dungeonLevel % 5 == 0)
                 {
                     //엘리트몬스터
-                    GameManager.Instance.Gold += (int)(_enterPower * GameManager.Instance.DungeonList[2].Reward);
+                    GameManager.Instance.Gold += (int)(_enterPower * GameManager.Instance.DungeonList[2].Reward *
+                                                       (1 + GameManager.Instance.BlessList[2].Amount *
+                                                           GameManager.Instance.blessGoldLevel));
                     GameManager.Instance.Stress += 3;
                 }
                 else
                 {
                     //일반몬스터
-                    GameManager.Instance.Gold += (int)(_enterPower * GameManager.Instance.DungeonList[1].Reward);
+                    GameManager.Instance.Gold += (int)(_enterPower * GameManager.Instance.DungeonList[1].Reward *
+                                                       (1 + GameManager.Instance.BlessList[2].Amount *
+                                                           GameManager.Instance.blessGoldLevel));
                     GameManager.Instance.Stress += 1;
                 }
 

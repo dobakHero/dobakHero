@@ -9,139 +9,155 @@ using Random = UnityEngine.Random;
 
 public class ManageGamePanel : MonoBehaviour
 {
-    [SerializeField] private GameObject goldTextGameObject;
-    [SerializeField] private GameObject chipTextGameObject;
-    [SerializeField] private GameObject powerTextGameObject;
-    [SerializeField] private GameObject levelTextGameObject;
     [SerializeField] private GameObject stressSlider;
 
     [SerializeField] private GameObject eventPanel;
 
-    private TextMeshProUGUI _goldText;
-    private TextMeshProUGUI _chipText;
-    private TextMeshProUGUI _powerText;
-    private TextMeshProUGUI _levelText;
+    [SerializeField] private TextMeshProUGUI goldText;
+    [SerializeField] private TextMeshProUGUI chipText;
+    [SerializeField] private TextMeshProUGUI powerText;
+    [SerializeField] private TextMeshProUGUI levelText;
+
+    [SerializeField] private TextMeshProUGUI taxText;
+
+    [SerializeField] private Transform buffView;
+
+    [SerializeField] private TextMeshProUGUI eventScriptText;
 
     private Slider _slider;
     private TextMeshProUGUI _stressText;
 
     private void Start()
     {
-        if (goldTextGameObject)
-        {
-            _goldText = goldTextGameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
-        }
-
-        if (chipTextGameObject)
-        {
-            _chipText = chipTextGameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
-        }
-
-        if (powerTextGameObject)
-        {
-            _powerText = powerTextGameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
-        }
-
-        if (levelTextGameObject)
-        {
-            _levelText = levelTextGameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
-        }
-
         if (stressSlider)
         {
             _slider = stressSlider.GetComponent<Slider>();
             _stressText = stressSlider.GetComponentInChildren<TextMeshProUGUI>();
         }
+
+        foreach (var buff in GameManager.Instance.BuffIconList)
+        {
+            if (buff.Value == null)
+            {
+                var obj = ObjectPool.Instance.GetPooledObject("BuffIcon");
+
+                GameManager.Instance.BuffIconList[buff.Key] = obj;
+
+                obj.transform.parent = buffView;
+                obj.transform.localScale = Vector3.one;
+
+                obj.GetComponent<BuffIcon>().id = buff.Key;
+            }
+        }
     }
 
     private void Update()
     {
-        if (_goldText)
+        if (goldText)
         {
             var gold = GameManager.Instance.Gold;
-            string goldText;
+            string goldTextString;
             if (gold > 1000000)
             {
                 gold /= 1000000;
-                goldText = gold + "M";
+                goldTextString = gold + "M";
             }
             else if (gold > 1000)
             {
                 gold /= 1000;
-                goldText = gold + "K";
+                goldTextString = gold + "K";
             }
             else
             {
-                goldText = gold.ToString();
+                goldTextString = gold.ToString();
             }
 
-            _goldText.text = goldText;
+            goldTextString += "골드";
+
+            goldText.text = goldTextString;
         }
 
-        if (_chipText)
+        if (chipText)
         {
             var chip = GameManager.Instance.Chip;
-            string chipText;
+            string chipTextString;
             if (chip > 1000000)
             {
                 chip /= 1000000;
-                chipText = chip + "M";
+                chipTextString = chip + "M";
             }
             else if (chip > 1000)
             {
                 chip /= 1000;
-                chipText = chip + "K";
+                chipTextString = chip + "K";
             }
             else
             {
-                chipText = chip.ToString();
+                chipTextString = chip.ToString();
             }
 
-            _chipText.text = chipText;
+            chipTextString += "칩";
+
+            chipText.text = chipTextString;
         }
 
-        if (_powerText)
+        if (powerText)
         {
             var power = GameManager.Instance.Power;
-            string powerText;
+            string powerTextString;
             if (power > 1000000)
             {
                 power /= 1000000;
-                powerText = power + "M";
+                powerTextString = power + "M";
             }
             else if (power > 1000)
             {
                 power /= 1000;
-                powerText = power + "K";
+                powerTextString = power + "K";
             }
             else
             {
-                powerText = power.ToString();
+                powerTextString = power.ToString();
             }
 
-            _powerText.text = powerText;
+            powerTextString += "파워";
+
+            powerText.text = powerTextString;
         }
 
-        if (_levelText)
+        if (levelText)
         {
             var level = GameManager.Instance.Level;
-            string levelText;
+            string levelTextString;
             if (level > 1000000)
             {
                 level /= 1000000;
-                levelText = level + "M";
+                levelTextString = level + "M";
             }
             else if (level > 1000)
             {
                 level /= 1000;
-                levelText = level + "K";
+                levelTextString = level + "K";
             }
             else
             {
-                levelText = level.ToString();
+                levelTextString = level.ToString();
             }
 
-            _levelText.text = levelText;
+            levelTextString += "레벨";
+
+            levelText.text = levelTextString;
+        }
+
+        if (taxText)
+        {
+            var tax = (int)(GameManager.Instance.buyChipCount * 0.3 + GameManager.Instance.Gold * 0.1);
+            if (GameManager.Instance.AppliedEvent[3].IsActive)
+            {
+                tax = (int)(tax * GameManager.Instance.EventList[3].Buff_Amount);
+            }
+
+            taxText.text = tax.ToString();
         }
 
         if (_slider)
@@ -157,6 +173,119 @@ public class ManageGamePanel : MonoBehaviour
 
     public void NextDay()
     {
+        ChangeDay();
+        
+        //일요일 이벤트
+        if (GameManager.Instance.Day == EDay.Sunday)
+        {
+            //세금
+            var tax = (int)(GameManager.Instance.buyChipCount * 0.3 + GameManager.Instance.Gold * 0.1);
+            GameManager.Instance.buyChipCount = 0;
+
+            //증세
+            if (GameManager.Instance.AppliedEvent[3].IsActive)
+            {
+                tax = (int)(tax * GameManager.Instance.EventList[3].Buff_Amount);
+                GameManager.Instance.AppliedEvent[3].IsActive = false;
+                ObjectPool.Instance.ReleaseObjectToPool(GameManager.Instance.BuffIconList[3]);
+                GameManager.Instance.BuffIconList.Remove(3);
+            }
+
+            if (GameManager.Instance.Gold > tax)
+            {
+                GameManager.Instance.Gold -= tax;
+            }
+            else
+            {
+                //게임오버
+                GameManager.Instance.GameOver();
+                return;
+            }
+        }
+        
+        //토요일 이벤트
+        if (GameManager.Instance.Day == EDay.Saturday)
+        {
+            //복권
+            var rand = Random.Range(0, 1000000);
+
+            foreach (var lottery in GameManager.Instance.lotteryList)
+            {
+                if (lottery == rand)
+                {
+                    var reward = (int)(GameManager.Instance.GamblingList[4].Reward);
+                
+                    //선조의 축복
+                    reward = (int)(reward * (1 + GameManager.Instance.blessChipLevel * GameManager.Instance.BlessList[1].Amount));
+                
+                    //돼지머리
+                    if (GameManager.Instance.hasPighead)
+                        reward = (int)(reward * (1 + GameManager.Instance.ShopList[5].Reward));
+
+                    GameManager.Instance.Chip += reward;
+                }
+            }
+            
+            GameManager.Instance.lotteryList.Clear();
+        }
+
+        //던전초기화
+        GameManager.Instance.canEnterDungeon = true;
+        
+        //도박초기화
+        GameManager.Instance.gamblingCurrentCount = GameManager.Instance.gamblingMaxCount;
+        
+        //음식초기화
+        GameManager.Instance.hasPighead = false;
+        if (GameManager.Instance.hasSteak)
+            GameManager.Instance.PowerMultipleList.Remove("Steak");
+        GameManager.Instance.hasSteak = false;
+
+        //이벤트
+        var randomValue = Random.Range(0f, 1f);
+        
+        if (randomValue <= 0.1f) //10%
+        {
+            DayEvent();
+        }
+
+        foreach (var getEvent in GameManager.Instance.AppliedEvent)
+        {
+            if (getEvent.Value.IsActive && getEvent.Key != 3)
+            {
+                if (getEvent.Value.Duration == 0)
+                {
+                    //버프 아이콘 제거
+
+                    if (GameManager.Instance.BuffIconList.ContainsKey(getEvent.Key))
+                    {
+                        ObjectPool.Instance.ReleaseObjectToPool(GameManager.Instance.BuffIconList[getEvent.Key]);
+                        GameManager.Instance.BuffIconList.Remove(getEvent.Key);
+                    }
+
+                    if (getEvent.Key == 1)
+                    {
+                        //적용중인 몸살버프 제거
+                        GameManager.Instance.PowerMultipleList.Remove(GameManager.Instance.EventList[1].English);
+                    }
+                    if (getEvent.Key == 2)
+                    {
+                        //적용중인 열정버프 제거
+                        GameManager.Instance.PowerMultipleList.Remove(GameManager.Instance.EventList[2].English);
+                    }
+
+                    getEvent.Value.IsActive = false;
+                }
+                else
+                {
+                    getEvent.Value.Duration -= 1;
+                }
+            }
+        }
+    }
+
+    private void ChangeDay()
+    {
         //요일 변경
         if (GameManager.Instance.Day != EDay.Sunday)
         {
@@ -167,127 +296,6 @@ public class ManageGamePanel : MonoBehaviour
             GameManager.Instance.Day = EDay.Monday;
         }
         Debug.Log("현재 요일 : " + GameManager.Instance.Day);
-        
-        //일요일 이벤트
-        if (GameManager.Instance.Day == EDay.Sunday)
-        {
-            //세금
-            var tempChip = 1;
-
-            var tax = (int)(tempChip * 0.3 + GameManager.Instance.Gold * 0.1);
-
-            //증세
-            foreach (var getEvent in GameManager.Instance.AppliedEvent)
-            {
-                if (getEvent.Key == 3)
-                {
-                    tax = (int)(tax * GameManager.Instance.EventList[3].Buff_Amount);
-                    GameManager.Instance.AppliedEvent.Remove(getEvent);
-                    break;
-                }
-            }
-
-            if (GameManager.Instance.Gold > tax)
-            {
-                GameManager.Instance.Gold -= tax;
-            }
-            else
-            {
-                //게임오버
-            }
-        }
-        
-        //토요일 이벤트
-        if (GameManager.Instance.Day == EDay.Saturday)
-        {
-            //복권
-        }
-
-        //던전초기화
-        GameManager.Instance.canEnterDungeon = true;
-        
-        //도박초기화
-        GameManager.Instance.gamblingCurrentCount = GameManager.Instance.gamblingMaxCount;
-            
-        //이벤트
-        var randomValue = Random.Range(0f, 1f);
-        
-        if (randomValue <= 0.1f) //10%
-        {
-            DayEvent();
-        }
-
-        for (var i = 0; i < GameManager.Instance.AppliedEvent.Count; i++)
-        {
-            if (GameManager.Instance.AppliedEvent[i].Value == 0)
-            {
-                //버프 아이콘 제거
-
-                if (GameManager.Instance.AppliedEvent[i].Key == 1)
-                {
-                    GameManager.Instance.PowerMultipleList.Remove(GameManager.Instance.EventList[1].English);
-                }
-
-                if (GameManager.Instance.AppliedEvent[i].Key == 2)
-                {
-                    GameManager.Instance.PowerMultipleList.Remove(GameManager.Instance.EventList[2].English);
-                }
-                
-                GameManager.Instance.AppliedEvent.Remove(GameManager.Instance.AppliedEvent[i]);
-            }
-            else
-            {
-                GameManager.Instance.AppliedEvent[i] = new KeyValuePair<int, int>(GameManager.Instance.AppliedEvent[i].Key,GameManager.Instance.AppliedEvent[i].Value - 1);
-
-                switch (GameManager.Instance.AppliedEvent[i].Key)
-                {
-                    case 1: //몸살
-                        //GameManager.cs 45줄
-                        Debug.Log("몸살 진행중");
-                        break;
-                    case 2: //열정
-                        //GameManager.cs 51줄
-                        Debug.Log("열정 진행중");
-                        break;
-                    case 3: //증세
-                        //GameManager.cs 153줄
-                        Debug.Log("증세 진행중");
-                        break;
-                    case 4: //폐쇄
-                        
-                        break;
-                    case 5: //행운
-                        
-                        break;
-                    case 6: //단속
-                        
-                        break;
-                    case 7: //벌금
-                        GameManager.Instance.Gold -= (int)(GameManager.Instance.Gold * GameManager.Instance.EventList[7].Buff_Amount);
-                        Debug.Log("벌금 이벤트 발생");
-                        GameManager.Instance.AppliedEvent.Remove(GameManager.Instance.AppliedEvent[i]);
-                        break;
-                    case 8: //우울증
-                        //GameManager.cs 116줄
-                        break;
-                    case 9: //장염
-                        break;
-                    case 10://기쁨
-                        GameManager.Instance.Stress -= 15;
-                        Debug.Log("기쁨 이벤트 발생");
-                        GameManager.Instance.AppliedEvent.Remove(GameManager.Instance.AppliedEvent[i]);
-                        break;
-                    case 11://불행
-                        GameManager.Instance.Stress += 15;
-                        Debug.Log("불행 이벤트 발생");
-                        GameManager.Instance.AppliedEvent.Remove(GameManager.Instance.AppliedEvent[i]);
-                        break;
-                    default:
-                        Debug.Log("Item CODE ERROR!!! Item.Key : " + GameManager.Instance.AppliedEvent[i].Key);
-                        break;
-                }
-            }
-        }
     }
 
     private void DayEvent()
@@ -295,55 +303,123 @@ public class ManageGamePanel : MonoBehaviour
         var randomValue = 0;
         while (randomValue == 0)
         {
-            randomValue = Random.Range(0, GameManager.Instance.EventList.Count);
+            randomValue = Random.Range(1, GameManager.Instance.EventList.Count + 1);
 
-            var hasSick = false;
-            var hasPassion = false;
-
-            foreach (var getEvent in GameManager.Instance.AppliedEvent)
-            {
-                if (getEvent.Key == randomValue)
-                {
-                    randomValue = 0;
-                }
-
-                if (getEvent.Key == 1)
-                {
-                    hasSick = true;
-                }
-
-                if (getEvent.Key == 2)
-                {
-                    hasPassion = true;
-                }
-            }
-            
-            //몸살과 열정은 중복 불가능
-            if ((randomValue == 1 && hasPassion) || (randomValue == 2 && hasSick))
+            if (GameManager.Instance.AppliedEvent[randomValue].IsActive || 
+                (randomValue == 1 && GameManager.Instance.AppliedEvent[2].IsActive) || 
+                (randomValue == 2 && GameManager.Instance.AppliedEvent[1].IsActive))
             {
                 randomValue = 0;
             }
         }
-        
-        GameManager.Instance.AppliedEvent.Add(new KeyValuePair<int, int>(randomValue, GameManager.Instance.EventList[randomValue].Buff_Duration));
-        
-        OpenEventPanel(randomValue);
 
+        if (randomValue == 4)
+        {
+            //폐쇄
+            GameManager.Instance.canEnterDungeon = false;
+        }
+        else if (randomValue == 6)
+        {
+            //단속
+            GameManager.Instance.gamblingCurrentCount = 0;
+        }
+        else if (randomValue == 7)
+        {
+            //벌금
+            GameManager.Instance.Gold = (int)(GameManager.Instance.Gold * 0.75f);
+        }
+        else if (randomValue == 10)
+        {
+            GameManager.Instance.Stress -= 15;
+        }
+        else if (randomValue == 11)
+        {
+            GameManager.Instance.Stress += 15;
+        }
+        else
+        {
+            GameManager.Instance.AppliedEvent[randomValue].IsActive = true;
+            GameManager.Instance.AppliedEvent[randomValue].Duration =
+                GameManager.Instance.EventList[randomValue].Buff_Duration;
+            
+            //버프아이콘 생성
+            var obj = ObjectPool.Instance.GetPooledObject("BuffIcon");
+            
+            GameManager.Instance.BuffIconList.Add(randomValue, obj);
+
+            obj.transform.parent = buffView;
+            obj.transform.localScale = Vector3.one;
+
+            obj.GetComponent<BuffIcon>().id = randomValue;
+        }
+        OpenEventPanel(randomValue);
         //몸살 배열 추가
         if (randomValue == 1)
         {
             GameManager.Instance.PowerMultipleList.Add(GameManager.Instance.EventList[1].English,GameManager.Instance.EventList[1].Buff_Amount);
         }
-        
         //열정 배열 추가
-        if (randomValue == 2)
+        else if (randomValue == 2)
         {
             GameManager.Instance.PowerMultipleList.Add(GameManager.Instance.EventList[2].English,GameManager.Instance.EventList[2].Buff_Amount);
         }
+        
+        ManageSave.Instance.Saved();
     }
 
     private void OpenEventPanel(int id)
     {
         eventPanel.SetActive(true);
+
+        switch (id)
+        {
+            case 1:
+                eventScriptText.text = GameManager.Instance.ScriptList["Script_Sick"];
+                break;
+            case 2:
+                eventScriptText.text = GameManager.Instance.ScriptList["Script_Passion"];
+                break;
+            case 3:
+                eventScriptText.text = GameManager.Instance.ScriptList["Script_Inc_Tax"];
+                break;
+            case 4:
+                eventScriptText.text = GameManager.Instance.ScriptList["Script_Closure"];
+                break;
+            case 5:
+                eventScriptText.text = GameManager.Instance.ScriptList["Script_Luck"];
+                break;
+            case 6:
+                eventScriptText.text = GameManager.Instance.ScriptList["Script_Crackdown"];
+                break;
+            case 7:
+                eventScriptText.text = GameManager.Instance.ScriptList["Script_Fine"];
+                break;
+            case 8:
+                eventScriptText.text = GameManager.Instance.ScriptList["Script_Depression"];
+                break;
+            case 9:
+                eventScriptText.text = GameManager.Instance.ScriptList["Script_Enteritis"];
+                break;
+            case 10:
+                eventScriptText.text = GameManager.Instance.ScriptList["Script_Joy"];
+                break;
+            case 11:
+                eventScriptText.text = GameManager.Instance.ScriptList["Script_Misfotrune"];
+                break;
+            default:
+                eventScriptText.text = "Buff ID Error!!!";
+                break;
+        }
+
+        if (id is 2 or 5 or 10)
+        {
+            //Positive
+            EffectManager.Instance.PlayEventPositive();
+        }
+        else
+        {
+            //Negative
+            EffectManager.Instance.PlayEventNegative();
+        }
     }
 }

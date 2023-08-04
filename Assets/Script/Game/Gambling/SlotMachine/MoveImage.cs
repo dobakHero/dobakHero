@@ -23,8 +23,6 @@ public class MoveImage : MonoBehaviour
     {
         _image = GetComponent<Image>();
         _image.sprite = imageList[Random.Range(0, imageList.Count)];
-
-        Debug.Log(transform.localPosition.y);
         
         if (transform.localPosition.y < 200f)
         {
@@ -34,8 +32,6 @@ public class MoveImage : MonoBehaviour
         {
             _isFirst = false;
         }
-        
-        Debug.Log(_isFirst);
     }
 
     private void OnEnable()

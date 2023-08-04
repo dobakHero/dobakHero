@@ -1,12 +1,16 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
+using System.Numerics;
 using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private GameObject gameOverPanel;
+    
     public static GameManager Instance;
 
     void Awake()
@@ -30,8 +34,25 @@ public class GameManager : MonoBehaviour
     #region Gold & Stat
 
     //재화
-    public int Gold { get; set; } = 0;
-    public int Chip { get; set; } = 0;
+    private long _gold = 0;
+    public long Gold
+    {
+        get => _gold;
+        set
+        {
+            _gold = value;
+        }
+    }
+
+    private int _chip = 0;
+    public int Chip
+    {
+        get => _chip;
+        set
+        {
+            _chip = value;
+        }
+    }
     
     //스텟
     private int _power = 5000;
@@ -119,35 +140,61 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public int Bless { get; set; } = 0;
+    private int _bless = 0;
+
+    public int Bless
+    {
+        get => _bless;
+        set
+        {
+            _bless = value;
+        }
+    }
+
+    [HideInInspector] public int blessStressLevel = 0;
+    [HideInInspector] public int blessChipLevel = 0;
+    [HideInInspector] public int blessGoldLevel = 0;
+    [HideInInspector] public int blessDungeonLevel = 0;
+
+    public Dictionary<int, Bless> BlessList;
 
     private int _stress;
-
     public int Stress
     {
         get => _stress;
         set
         {
-            foreach (var getEvent in AppliedEvent)
+            var increaseStress = value - _stress;
+            
+            //우울증 이벤트
+            if (AppliedEvent[8].IsActive)
             {
-                if (getEvent.Key == 8)
+                if (increaseStress > 0)
                 {
-                    var increaseStress = value - _stress;
-
-                    if (increaseStress > 0)
-                    {
-                        value = (int)(increaseStress * 1.5) + _stress;
-                    }
-
-                    break;
+                    value = (int)(increaseStress * (1 + EventList[8].Buff_Amount)) + _stress;
                 }
+            }
+
+            //선조의 축복
+            increaseStress = value - _stress;
+
+            if (increaseStress > 0)
+            {
+                value = (int)(increaseStress * (1 - BlessList[4].Amount * blessStressLevel)) + _stress;
+            }
+            
+            //최솟값
+            if (value < 0)
+            {
+                value = 0;
             }
             
             //최댓값
-            if (value > 100)
+            if (value >= 100)
             {
                 value = 100;
                 //게임오버
+                GameOver();
             }
 
             _stress = value;
@@ -158,11 +205,22 @@ public class GameManager : MonoBehaviour
 
     #region Event
 
-    public EDay Day { get; set; } = EDay.Monday;
+    private EDay _day = EDay.Monday;
+
+    public EDay Day
+    {
+        get => _day;
+        set
+        {
+            _day = value;
+        }
+    }
 
     //CSV에서 읽어온 Event 저장
     public Dictionary<int, Event> EventList;    //(ID, Event)
-    public List<KeyValuePair<int, int>> AppliedEvent;   //(ID, Duration)
+    public Dictionary<int, Buff> AppliedEvent;   //(ID, Duration)
+
+    public Dictionary<int, GameObject> BuffIconList;
 
     #endregion
 
@@ -171,11 +229,11 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public int gamblingMaxCount = 3;
     [HideInInspector] public int gamblingCurrentCount = 3;
 
-    public Dictionary<int, Gambling> GamblingList;
+    [HideInInspector] public Dictionary<int, Gambling> GamblingList;
 
-    public List<int> lotteryList;
-    
-    
+    [HideInInspector] public List<int> lotteryList;
+
+    [HideInInspector] public int buyChipCount = 0;
 
     #endregion
 
@@ -186,16 +244,28 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public bool canEnterDungeon = true;
 
     #endregion
+
+    #region Shop
+
+    public Dictionary<int, Shop> ShopList;
+    [HideInInspector] public int figureStock = 2;
+    [HideInInspector] public bool hasPighead = false;
+    [HideInInspector] public bool hasSteak = false;
     
+    #endregion
+
     private void DataInitialize()
     {
         //AppliedEvent Assignment
-        AppliedEvent = new List<KeyValuePair<int, int>>();
+        AppliedEvent = new Dictionary<int, Buff>();
 
         PowerPlusList = new Dictionary<string, int>();
         PowerMultipleList = new Dictionary<string, float>();
 
+        BuffIconList = new Dictionary<int, GameObject>();
+
         lotteryList = new List<int>();
+        
     }
 
     private void LoadData()
@@ -206,7 +276,22 @@ public class GameManager : MonoBehaviour
         {
             ScriptList.Add(script["English"].ToString(),script["Korean"].ToString());
         }
-        
+
+        BlessList = new Dictionary<int, Bless>();
+        var blessCsv = CSVReader.Read("CSV/Datatable_Bless");
+        foreach (var bless in blessCsv)
+        {
+            var temp = new Bless 
+            {
+                English = bless["English"].ToString(),
+                Korean = bless["Korean"].ToString(),
+                Amount = float.Parse(bless["Amount"].ToString()),
+                Max = int.Parse(bless["Max"].ToString())
+            };
+
+            BlessList.Add(int.Parse(bless["ID"].ToString()), temp);
+        }
+
         EventList = new Dictionary<int, Event>();
         var eventCsv = CSVReader.Read("CSV/Datatable_Event");
         foreach (var events in eventCsv)
@@ -220,6 +305,11 @@ public class GameManager : MonoBehaviour
             };
 
             EventList.Add(int.Parse(events["ID"].ToString()), temp);
+        }
+
+        foreach (var events in EventList)
+        {
+            AppliedEvent.Add(events.Key,new Buff(0,false));
         }
         
         GamblingList = new Dictionary<int, Gambling>();
@@ -252,5 +342,71 @@ public class GameManager : MonoBehaviour
 
             DungeonList.Add(int.Parse(dungeon["ID"].ToString()), temp);
         }
+
+        ShopList = new Dictionary<int, Shop>();
+        var shopCsv = CSVReader.Read("CSV/Datatable_Shop");
+        foreach (var shop in shopCsv)
+        {
+            var temp = new Shop
+            {
+                English = shop["English"].ToString(),
+                Korean = shop["Korean"].ToString(),
+                Price = long.Parse(shop["Price"].ToString(), NumberStyles.AllowExponent),
+                Reward = float.Parse(shop["Reward"].ToString()),
+                Stress = int.Parse(shop["Stress"].ToString()),
+                Power = int.Parse(shop["Power"].ToString()),
+                Stock = int.Parse(shop["Stock"].ToString()),
+            };
+            
+            ShopList.Add(int.Parse(shop["ID"].ToString()), temp);
+        }
+    }
+
+    public void GameOver()
+    {
+        if(gameOverPanel)
+            gameOverPanel.SetActive(true);
+        else
+        {
+            Instantiate(gameOverPanel);
+            gameOverPanel.SetActive(true);
+        }
+    }
+
+    public void ReStart()
+    {
+        Gold = 0;
+        Chip = 0;
+        _power = 5000;
+        
+        PowerPlusList.Clear();
+        PowerMultipleList.Clear();
+
+        _level = 1;
+        _stress = 0;
+
+        Day = EDay.Monday;
+        foreach (var getEvent in AppliedEvent)
+        {
+            getEvent.Value.IsActive = false;
+        }
+
+        foreach (var buffIcon in BuffIconList)
+        {
+            ObjectPool.Instance.ReleaseObjectToPool(buffIcon.Value);
+        }
+        BuffIconList.Clear();
+
+        gamblingMaxCount = 3;
+        gamblingCurrentCount = 3;
+        
+        lotteryList.Clear();
+        buyChipCount = 0;
+
+        canEnterDungeon = true;
+
+        figureStock = 2;
+        hasPighead = false;
+        hasSteak = false;
     }
 }

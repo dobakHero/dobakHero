@@ -30,6 +30,8 @@ public class ManageHorseRacing : MonoBehaviour
 
     private bool _isRestart;
     private bool _isWin;
+
+    private bool _isFinish;
     
     private void Awake()
     {
@@ -48,6 +50,7 @@ public class ManageHorseRacing : MonoBehaviour
 
         _isRestart = false;
         _isWin = false;
+        _isFinish = false;
         
         resultImage.SetActive(false);
 
@@ -241,20 +244,38 @@ public class ManageHorseRacing : MonoBehaviour
 
     public void FinishMove()
     {
-        exitButton.interactable = true;
-        _isRestart = true;
-        //패배 승리 이미지
-        if (_isWin)
+        if (!_isFinish)
         {
-            resultText.text = "승리";
-            GameManager.Instance.Chip += (int)(_chipCount * _horseDividend[_selectHorseIdx]);
-        }
-        else
-        {
-            resultText.text = "패배";
-        }
+            _isFinish = true;
+            exitButton.interactable = true;
+            _isRestart = true;
+            //패배 승리 이미지
+            if (_isWin)
+            {
+                resultText.text = "승리";
+                
+                var reward = (int)(_chipCount * _horseDividend[_selectHorseIdx]);
+                
+                //선조의 축복
+                reward = (int)(reward * (1 + GameManager.Instance.blessChipLevel * GameManager.Instance.BlessList[1].Amount));
+                
+                //돼지머리
+                if (GameManager.Instance.hasPighead)
+                    reward = (int)(reward * (1 + GameManager.Instance.ShopList[5].Reward));
+
+                GameManager.Instance.Chip += reward;
+            
+                EffectManager.Instance.PlayDobakVictory();
+            }
+            else
+            {
+                resultText.text = "패배";
+            
+                EffectManager.Instance.PlayDobakDefeat();
+            }
         
-        resultImage.SetActive(true);
+            resultImage.SetActive(true);
+        }
     }
 
     public void Restart()

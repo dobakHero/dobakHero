@@ -96,11 +96,37 @@ public class ManageSlotMachine : MonoBehaviour
             if (_slot1Idx == 4 && _slot2Idx == 4 && _slot3Idx == 4)
             {
                 //777
-                GameManager.Instance.Chip += 1000;
+                var reward = (int)(1000);
+                
+                //선조의 축복
+                reward = (int)(reward * (1 + GameManager.Instance.blessChipLevel * GameManager.Instance.BlessList[1].Amount));
+                
+                //돼지머리
+                if (GameManager.Instance.hasPighead)
+                    reward = (int)(reward * (1 + GameManager.Instance.ShopList[5].Reward));
+
+                GameManager.Instance.Chip += reward;
+                
+                EffectManager.Instance.PlayDobakVictory();
             }
             else if (_slot1Idx == _slot2Idx && _slot2Idx == _slot3Idx)
             {
-                GameManager.Instance.Chip += GameManager.Instance.GamblingList[1].Reward;
+                var reward = (int)(GameManager.Instance.GamblingList[1].Reward);
+                
+                //선조의 축복
+                reward = (int)(reward * (1 + GameManager.Instance.blessChipLevel * GameManager.Instance.BlessList[1].Amount));
+                
+                //돼지머리
+                if (GameManager.Instance.hasPighead)
+                    reward = (int)(reward * (1 + GameManager.Instance.ShopList[5].Reward));
+
+                GameManager.Instance.Chip += reward;
+                
+                EffectManager.Instance.PlayDobakVictory();
+            }
+            else
+            {
+                EffectManager.Instance.PlayDobakDefeat();
             }
         }
     }

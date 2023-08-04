@@ -9,8 +9,10 @@ public class ManageGambling : MonoBehaviour
     [SerializeField] private GameObject horseRacingPanel;
     [SerializeField] private GameObject blackJackPanel;
     [SerializeField] private GameObject lotteryPanel;
+    [SerializeField] private GameObject roulettePanel;
+    [SerializeField] private GameObject chipShopPanel;
 
-    private void Start()
+    private void OnEnable()
     {
         if (slotMachinePanel)
         {
@@ -30,6 +32,16 @@ public class ManageGambling : MonoBehaviour
         if (lotteryPanel)
         {
             lotteryPanel.SetActive(false);
+        }
+
+        if (chipShopPanel)
+        {
+            chipShopPanel.SetActive(false);
+        }
+
+        if (roulettePanel)
+        {
+            roulettePanel.SetActive(false);
         }
     }
 
@@ -74,6 +86,22 @@ public class ManageGambling : MonoBehaviour
         if (lotteryPanel)
         {
             lotteryPanel.SetActive(true);
+        }
+    }
+
+    public void OpenRoulettePanel()
+    {
+        if (roulettePanel)
+        {
+            roulettePanel.SetActive(true);
+        }
+    }
+
+    public void OpenChipShopPanel()
+    {
+        if (chipShopPanel)
+        {
+            chipShopPanel.SetActive(true);
         }
     }
 }
